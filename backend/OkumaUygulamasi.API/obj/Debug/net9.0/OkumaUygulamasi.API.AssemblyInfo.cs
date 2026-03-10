@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("a15a00db-0256-49a2-bd1d-5b21a769076a")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("OkumaUygulamasi.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1766ca99845f95e8e96262074b62091cf0fba1ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14dd3989f5f4150b53b954bf85399c71d99d025f")]
 [assembly: System.Reflection.AssemblyProductAttribute("OkumaUygulamasi.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OkumaUygulamasi.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
