@@ -1,34 +1,58 @@
-using Microsoft.EntityFrameworkCore;
 using OkumaUygulamasi.API.Data;
-using OkumaUygulamasi.API.Models;
 using OkumaUygulamasi.API.Endpoints;
+using OkumaUygulamasi.API.Extensions;
+using OkumaUygulamasi.API.Exceptions;
+
+using Microsoft.EntityFrameworkCore;
+using System.Threading.RateLimiting;
+using Microsoft.AspNetCore.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddCors(options => {
+builder.Services.AddCors(options =>
+{
     options.AddPolicy("AllowAll", policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
+builder.Services.AddRateLimiter(options =>
+{
+    options.AddFixedWindowLimiter("General", opt =>
+    {
+        opt.Window = TimeSpan.FromSeconds(10);
+        opt.PermitLimit = 30;
+        opt.QueueLimit = 0;
+    });
 
+    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+    options.OnRejected = async (context, token) =>
+    {
+        context.HttpContext.Response.StatusCode = StatusCodes.Status429TooManyRequests;
+
+        var problemDetails = new Microsoft.AspNetCore.Mvc.ProblemDetails
+        {
+            Status = StatusCodes.Status429TooManyRequests,
+            Title = "Çok Fazla Ýstek (Rate Limit)",
+            Detail = "Fazla istek sebebiyle koruma amaçlý kýsa süreliðine engellendiniz. Lütfen birkaç saniye bekleyip tekrar deneyin."
+        };
+
+        await context.HttpContext.Response.WriteAsJsonAsync(problemDetails, token);
+    };
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-var app = builder.Build();
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    if (!db.Books.Any())
-    {
-        var sampleBook = new Book { Title = "Küçük Prens", Content = "Bütün büyükler bir zamanlar çocuktu...", UnlockCost = 0, IsLocked = false };
-        db.Books.Add(sampleBook);
-        db.SaveChanges();
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 
-        db.Questions.Add(new Question { BookId = sampleBook.Id, Text = "Küçük Prens'in çiçeði nedir?", CorrectAnswer = "Gül", Points = 10 });
-        db.SaveChanges();
-    }
-}
+var app = builder.Build();
+
+app.ApplyMigrations(); /*SeedDatalar da burada*/
+
+app.UseExceptionHandler();
+app.UseRateLimiter();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -39,5 +63,6 @@ app.UseHttpsRedirection();
 
 app.MapBookEndpoints();
 app.MapUserEndpoints();
+app.MapQuestionEndpoints();
 
 app.Run();

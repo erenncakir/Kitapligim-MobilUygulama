@@ -8,7 +8,7 @@ namespace OkumaUygulamasi.API.Endpoints
     {
         public static void MapUserEndpoints(this IEndpointRouteBuilder app)
         {
-            var userApi = app.MapGroup("/api/v1/users");
+            var userApi = app.MapGroup("/api/v1/users").RequireRateLimiting("General");
 
             userApi.MapGet("/{deviceId}", async (string deviceId, AppDbContext db) =>
             {
@@ -22,17 +22,6 @@ namespace OkumaUygulamasi.API.Endpoints
                 }
 
                 return Results.Ok(user);
-            });
-
-            userApi.MapPost("/earn-points", async (string userId, int points, AppDbContext db) =>
-            {
-                var user = await db.Users.FindAsync(userId);
-                if (user == null) return Results.NotFound("Kullanıcı bulunamadı.");
-
-                user.TotalPoints += points;
-                await db.SaveChangesAsync();
-
-                return Results.Ok(new { Message = "Puan eklendi", CurrentPoints = user.TotalPoints });
             });
 
             userApi.MapPost("/unlock-book", async (string userId, int bookId, AppDbContext db) =>
@@ -54,6 +43,16 @@ namespace OkumaUygulamasi.API.Endpoints
                 await db.SaveChangesAsync();
 
                 return Results.Ok(new { Message = "Kitap kilidi açıldı!", RemainingPoints = user.TotalPoints });
+            });
+
+            userApi.MapGet("/{userId}/unlocked-books", async (string userId, AppDbContext db) =>
+            {
+                var unlockedBookIds = await db.UserBooks
+                    .Where(ub => ub.UserId == userId)
+                    .Select(ub => ub.BookId)
+                    .ToListAsync();
+
+                return Results.Ok(unlockedBookIds);
             });
         }
     }

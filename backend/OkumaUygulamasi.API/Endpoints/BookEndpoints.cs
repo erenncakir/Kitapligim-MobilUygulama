@@ -8,7 +8,7 @@ namespace OkumaUygulamasi.API.Endpoints
     {
         public static void MapBookEndpoints(this IEndpointRouteBuilder app)
         {
-            var bookApi = app.MapGroup("/api/v1/books");
+            var bookApi = app.MapGroup("/api/v1/books").RequireRateLimiting("General");
 
             bookApi.MapGet("/", async (AppDbContext db) =>
             {
