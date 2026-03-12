@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OkumaUygulamasi.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14dd3989f5f4150b53b954bf85399c71d99d025f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0742fe1afc9db1b6dcd88dc0e1d1211ea52a5653")]
 [assembly: System.Reflection.AssemblyProductAttribute("OkumaUygulamasi.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OkumaUygulamasi.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
