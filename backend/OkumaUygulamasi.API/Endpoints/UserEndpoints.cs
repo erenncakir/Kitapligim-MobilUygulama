@@ -8,7 +8,7 @@ namespace OkumaUygulamasi.API.Endpoints
     {
         public static void MapUserEndpoints(this IEndpointRouteBuilder app)
         {
-            var userApi = app.MapGroup("/api/v1/users");
+            var userApi = app.MapGroup("/api/v1/users").RequireRateLimiting("General");
 
             userApi.MapGet("/{deviceId}", async (string deviceId, AppDbContext db) =>
             {
