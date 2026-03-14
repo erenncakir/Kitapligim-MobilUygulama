@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OkumaUygulamasi.API.Data;
+using OkumaUygulamasi.API.Extensions;
 using OkumaUygulamasi.API.Models;
 
 namespace OkumaUygulamasi.API.Endpoints
@@ -8,7 +9,7 @@ namespace OkumaUygulamasi.API.Endpoints
     {
         public static void MapUserEndpoints(this IEndpointRouteBuilder app)
         {
-            var userApi = app.MapGroup("/api/v1/users").RequireRateLimiting("General");
+            var userApi = app.MapVersionedGroup("users").RequireRateLimiting("General");
 
             userApi.MapGet("/{deviceId}", async (string deviceId, AppDbContext db) =>
             {

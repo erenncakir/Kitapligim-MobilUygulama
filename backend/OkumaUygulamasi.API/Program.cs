@@ -3,6 +3,7 @@ using OkumaUygulamasi.API.Endpoints;
 using OkumaUygulamasi.API.Extensions;
 using OkumaUygulamasi.API.Exceptions;
 
+using Asp.Versioning;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.RateLimiting;
@@ -37,6 +38,14 @@ builder.Services.AddRateLimiter(options =>
         await context.HttpContext.Response.WriteAsJsonAsync(problemDetails, token);
     };
 });
+
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.ReportApiVersions = true;
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

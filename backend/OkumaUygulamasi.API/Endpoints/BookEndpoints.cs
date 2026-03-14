@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OkumaUygulamasi.API.Data;
 using OkumaUygulamasi.API.Models;
+using OkumaUygulamasi.API.Extensions;
 
 namespace OkumaUygulamasi.API.Endpoints
 {
@@ -8,7 +9,7 @@ namespace OkumaUygulamasi.API.Endpoints
     {
         public static void MapBookEndpoints(this IEndpointRouteBuilder app)
         {
-            var bookApi = app.MapGroup("/api/v1/books").RequireRateLimiting("General");
+            var bookApi = app.MapVersionedGroup("books").RequireRateLimiting("General");
 
             bookApi.MapGet("/", async (AppDbContext db) =>
             {
