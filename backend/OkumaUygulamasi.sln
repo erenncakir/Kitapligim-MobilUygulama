@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkumaUygulamasi.API", "OkumaUygulamasi.API\OkumaUygulamasi.API.csproj", "{CEC8FBF7-2984-4542-A80C-6E0A99851992}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkumaUygulamasi.Tests", "OkumaUygulamasi.Tests\OkumaUygulamasi.Tests.csproj", "{41F61D5F-6C22-48FA-AE55-14098B079B02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{CEC8FBF7-2984-4542-A80C-6E0A99851992}.Release|x64.Build.0 = Release|Any CPU
 		{CEC8FBF7-2984-4542-A80C-6E0A99851992}.Release|x86.ActiveCfg = Release|Any CPU
 		{CEC8FBF7-2984-4542-A80C-6E0A99851992}.Release|x86.Build.0 = Release|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Debug|x64.Build.0 = Debug|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Debug|x86.Build.0 = Debug|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Release|x64.ActiveCfg = Release|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Release|x64.Build.0 = Release|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Release|x86.ActiveCfg = Release|Any CPU
+		{41F61D5F-6C22-48FA-AE55-14098B079B02}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
