@@ -3,42 +3,32 @@
   "WorkspaceRootPath": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\okumauygulamasi.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\okumauygulamasi.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{41F61D5F-6C22-48FA-AE55-14098B079B02}|OkumaUygulamasi.Tests\\OkumaUygulamasi.Tests.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.tests\\bookunlocktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F61D5F-6C22-48FA-AE55-14098B079B02}|OkumaUygulamasi.Tests\\OkumaUygulamasi.Tests.csproj|solutionrelative:okumauygulamasi.tests\\bookunlocktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{41F61D5F-6C22-48FA-AE55-14098B079B02}|OkumaUygulamasi.Tests\\OkumaUygulamasi.Tests.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.tests\\questiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F61D5F-6C22-48FA-AE55-14098B079B02}|OkumaUygulamasi.Tests\\OkumaUygulamasi.Tests.csproj|solutionrelative:okumauygulamasi.tests\\questiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\endpoints\\questionendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\endpoints\\questionendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\endpoints\\bookendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\endpoints\\bookendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\models\\userbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\models\\userbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|d:\\mobil_uygulama\\sat_proje\\backend\\okumauygulamasi.api\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEC8FBF7-2984-4542-A80C-6E0A99851992}|OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj|solutionrelative:okumauygulamasi.api\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,39 +38,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Microsoft.NET.TargetFrameworkInference.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAjwJwAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-03-10T10:02:36.654Z",
+              "DocumentIndex": 0,
+              "Title": "BookUnlockTests.cs",
+              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.Tests\\BookUnlockTests.cs",
+              "RelativeDocumentMoniker": "OkumaUygulamasi.Tests\\BookUnlockTests.cs",
+              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.Tests\\BookUnlockTests.cs",
+              "RelativeToolTip": "OkumaUygulamasi.Tests\\BookUnlockTests.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T11:55:02.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Microsoft.NET.TargetFrameworkInference.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-03-10T09:25:00.904Z"
+              "Title": "QuestionTests.cs",
+              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.Tests\\QuestionTests.cs",
+              "RelativeDocumentMoniker": "OkumaUygulamasi.Tests\\QuestionTests.cs",
+              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.Tests\\QuestionTests.cs",
+              "RelativeToolTip": "OkumaUygulamasi.Tests\\QuestionTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T11:49:56.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OkumaUygulamasi.API.csproj",
-              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj",
-              "RelativeDocumentMoniker": "OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj",
-              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj",
-              "RelativeToolTip": "OkumaUygulamasi.API\\OkumaUygulamasi.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-10T09:23:02.375Z",
+              "DocumentIndex": 2,
+              "Title": "QuestionEndpoints.cs",
+              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Endpoints\\QuestionEndpoints.cs",
+              "RelativeDocumentMoniker": "OkumaUygulamasi.API\\Endpoints\\QuestionEndpoints.cs",
+              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Endpoints\\QuestionEndpoints.cs",
+              "RelativeToolTip": "OkumaUygulamasi.API\\Endpoints\\QuestionEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T11:30:17.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EndpointExtensions.cs",
+              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Extensions\\EndpointExtensions.cs",
+              "RelativeDocumentMoniker": "OkumaUygulamasi.API\\Extensions\\EndpointExtensions.cs",
+              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Extensions\\EndpointExtensions.cs",
+              "RelativeToolTip": "OkumaUygulamasi.API\\Extensions\\EndpointExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T11:13:42.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserEndpoints.cs",
+              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Endpoints\\UserEndpoints.cs",
+              "RelativeDocumentMoniker": "OkumaUygulamasi.API\\Endpoints\\UserEndpoints.cs",
+              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Endpoints\\UserEndpoints.cs",
+              "RelativeToolTip": "OkumaUygulamasi.API\\Endpoints\\UserEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:13:52.956Z",
               "EditorCaption": ""
             },
             {
@@ -91,90 +117,23 @@
               "RelativeDocumentMoniker": "OkumaUygulamasi.API\\Endpoints\\BookEndpoints.cs",
               "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Endpoints\\BookEndpoints.cs",
               "RelativeToolTip": "OkumaUygulamasi.API\\Endpoints\\BookEndpoints.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T09:17:50.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Program.cs",
               "RelativeDocumentMoniker": "OkumaUygulamasi.API\\Program.cs",
               "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Program.cs",
               "RelativeToolTip": "OkumaUygulamasi.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAIBJwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T08:45:05.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "OkumaUygulamasi.API\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "OkumaUygulamasi.API\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T08:30:11.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserBook.cs",
-              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Models\\UserBook.cs",
-              "RelativeDocumentMoniker": "OkumaUygulamasi.API\\Models\\UserBook.cs",
-              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Models\\UserBook.cs",
-              "RelativeToolTip": "OkumaUygulamasi.API\\Models\\UserBook.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T08:18:02.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Models\\User.cs",
-              "RelativeDocumentMoniker": "OkumaUygulamasi.API\\Models\\User.cs",
-              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Models\\User.cs",
-              "RelativeToolTip": "OkumaUygulamasi.API\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T08:15:23.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Question.cs",
-              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Models\\Question.cs",
-              "RelativeDocumentMoniker": "OkumaUygulamasi.API\\Models\\Question.cs",
-              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Models\\Question.cs",
-              "RelativeToolTip": "OkumaUygulamasi.API\\Models\\Question.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T08:08:27.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Book.cs",
-              "DocumentMoniker": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "OkumaUygulamasi.API\\Models\\Book.cs",
-              "ToolTip": "D:\\Mobil_Uygulama\\SAT_Proje\\backend\\OkumaUygulamasi.API\\Models\\Book.cs",
-              "RelativeToolTip": "OkumaUygulamasi.API\\Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T08:11:59.645Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2026-03-10T08:45:05.968Z",
+              "EditorCaption": ""
             }
           ]
         }
