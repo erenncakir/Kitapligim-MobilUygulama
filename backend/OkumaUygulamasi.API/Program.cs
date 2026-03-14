@@ -62,11 +62,13 @@ app.ApplyMigrations(); /*SeedDatalar da burada*/
 app.UseExceptionHandler();
 app.UseRateLimiter();
 
-if (app.Environment.IsDevelopment())
+/*GEÇÝCÝ OLARAK SWAGGER ORTAMA AÇILDI*/
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Okuma Uygulamasý API v1");
+    options.RoutePrefix = string.Empty;
+});
 app.UseCors("AllowAll");
 app.UseHttpsRedirection();
 
