@@ -15,7 +15,7 @@ namespace OkumaUygulamasi.API.Extensions
                     .ReportApiVersions()
                     .Build();
             }
-            return app.MapGroup($"/api/v{{version:ApiVersion}}/{prefix}")
+            return app.MapGroup($"/api/v{version}/{prefix}")
                 .WithApiVersionSet(_apiVersionSet)
                 .MapToApiVersion(version);
         }
