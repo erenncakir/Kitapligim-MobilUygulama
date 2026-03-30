@@ -41,7 +41,7 @@ builder.Services.AddRateLimiter(options =>
 
 builder.Services.AddApiVersioning(options =>
 {
-    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.DefaultApiVersion = new Asp.Versioning.ApiVersion(1, 0);
     options.AssumeDefaultVersionWhenUnspecified = true;
     options.ReportApiVersions = true;
 });
@@ -62,11 +62,13 @@ app.ApplyMigrations(); /*SeedDatalar da burada*/
 app.UseExceptionHandler();
 app.UseRateLimiter();
 
-if (app.Environment.IsDevelopment())
+/*GEÇÝCÝ OLARAK SWAGGER ORTAMA AÇILDI*/
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Okuma Uygulamasi API v1");
+    options.RoutePrefix = string.Empty;
+});
 app.UseCors("AllowAll");
 app.UseHttpsRedirection();
 
