@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OkumaUygulamasi.API.Data;
+using OkumaUygulamasi.API.Models;
 using OkumaUygulamasi.API.Extensions;
 
 namespace OkumaUygulamasi.API.Endpoints

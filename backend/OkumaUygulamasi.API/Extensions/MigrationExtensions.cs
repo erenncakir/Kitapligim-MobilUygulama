@@ -13,7 +13,7 @@ namespace OkumaUygulamasi.API.Extensions
 
             dbContext.Database.Migrate();
 
-            bool hasOldBooks = dbContext.Books.Any(b => string.IsNullOrEmpty(b.Category));
+            bool hasOldBooks = dbContext.Books.Any(b => string.IsNullOrEmpty(b.Category) || string.IsNullOrEmpty(b.Description));
             if (hasOldBooks)
             {
                 dbContext.UserBooks.RemoveRange(dbContext.UserBooks);
@@ -27,6 +27,7 @@ namespace OkumaUygulamasi.API.Extensions
                 var book1 = new Book
                 {
                     Title = "Küçük Prens",
+                    Description = "Bir çocuğun gözünden büyüklerin dünyasına masalsı bir bakış.",
                     Category = "Klasikler",
                     Content = str,
                     UnlockCost = 0,
@@ -35,6 +36,7 @@ namespace OkumaUygulamasi.API.Extensions
                 var book2 = new Book
                 {
                     Title = "Kılıçustasının Macerası",
+                    Description = "Efsanevi bir kılıçustasının tehlikeli ormanlar ve zindanlardaki macerası.",
                     Category = "Macera",
                     Content = str,
                     UnlockCost = 0,
@@ -43,6 +45,7 @@ namespace OkumaUygulamasi.API.Extensions
                 var book3 = new Book
                 {
                     Title = "Pinokyo",
+                    Description = "Gerçek bir çocuk olmak isteyen tahta kukla Pinokyo'nun sihirli hikayesi.",
                     Category = "Masallar",
                     Content = str,
                     UnlockCost = 20,
@@ -51,6 +54,7 @@ namespace OkumaUygulamasi.API.Extensions
                 var book4 = new Book
                 {
                     Title = "Gezegenler Arası Yolculuk",
+                    Description = "Güneş sisteminin bilinmeyen derinliklerine doğru bilim dolu bir serüven.",
                     Category = "Bilim Kurgu",
                     Content =str,
                     UnlockCost = 40,
