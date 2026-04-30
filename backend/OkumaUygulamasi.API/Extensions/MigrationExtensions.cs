@@ -488,13 +488,12 @@ Defne teyzesi güldü, ""Onu da bir sonraki maceramızda keşfederiz!""
         {
             if (!dbContext.Books.Any(b=> b.Title == book.Title))
             {
-                dbContext.Books.Add(book);
-                dbContext.SaveChanges();
-
-                foreach(var question in questions)
+                
+                foreach (var question in questions)
                 {
-                    question.BookId = book.Id;
+                    question.Book = book;
                 }
+                dbContext.Books.Add(book);
                 dbContext.Questions.AddRange(questions);
                 dbContext.SaveChanges();
             }
