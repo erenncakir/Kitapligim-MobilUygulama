@@ -19,476 +19,485 @@ namespace OkumaUygulamasi.API.Extensions
             AddBookIfNotExists(dbContext,
                 new Book
                 {
-                    Title = "Ayasofya, Gökyüzüne Dokunan Dev",
-                    Category = "İstanbulun Mirasları",
-                    Description = @"Küçük gezgin Elif ve tonton anneannesinin peşine takılarak İstanbul'un en görkemli yapısı Ayasofya'nın sırlarını keşfetmeye ne dersiniz? Bu sıcak ve merak uyandırıcı hikâyede çocuklar; devasa kubbenin altında geçmişe yolculuk yapacak, parlayan mozaiklerin, sevimli kedilerin ve sihirli dilek sütununun gizemini eğlenerek öğrenecekler.",
-                    Content = @"Sultanahmet Meydanı'nda güneşli, harika bir gündü. Güvercinler _“Gurr, gurr”_ diyerek etrafta dolaşıyor, ağaçlardaki rengârenk çiçekler etrafa mis gibi kokular yayıyordu. Yedi yaşındaki Elif, elindeki simit kırıntılarını kuşlara atarken birden başını kaldırdı. Karşısında öyle büyük, öyle görkemli bir bina duruyordu ki gözlerine inanamadı.
+                    Title = "Neşeli Yunuslar, Suların Özgür Dansçıları",
+                    Category = "Denizin Derinlikleri",
+                    Description = @"Rüzgârı saçlarında hisseden küçük Kaan’ın yelkenli bir tekneyle mavi sulara açılıp neşeli yunuslarla tanışmasına eşlik etmeye hazır mısınız? Bu sıcacık hikâyede çocuklar; yunusların nefes alma sırlarını, karanlık sularda yönlerini nasıl bulduklarını ve uyurken neden tek gözlerini açık tuttuklarını macera dolu bir yolla öğrenecekler.",
+                    Content = @"Güneşli, rüzgârın tatlı tatlı estiği bir pazar sabahıydı. Altı yaşındaki Kaan, hayatında ilk defa babasıyla birlikte küçük, beyaz bir yelkenli tekneyle denize açılmıştı. Deniz o kadar maviydi ki, sanki gökyüzü aşağıya inmiş de suya dönüşmüş gibiydi. Martılar teknenin peşinden uçuyor, rüzgâr Kaan'ın yanaklarını hafifçe okşuyordu.
 
-Binanın rengi çok tatlı bir pembeydi ve en tepesinde kocaman, yuvarlak bir kubbesi vardı. Yanında ise gökyüzüne uzanan dört tane uzun minare, sanki binayı koruyan muhafızlar gibi nöbet tutuyordu.
+Kaan teknenin ucuna oturdu, bacaklarını sallandırdı ve heyecanla denizi izlemeye başladı. Suyun altında kimlerin yaşadığını, orada nasıl bir hayat olduğunu çok merak ediyordu.
 
-Elif, hemen yanında duran, beyaz saçlı ve çok güzel masallar anlatan anneannesinin elini tuttu. ""Anneanne, şu karşıdaki devasa bina bir devin evi mi? Kapıları o kadar büyük ki, oradan ancak kocaman bir dev geçebilir!"" dedi gülerek.
+Bir ara, teknenin hemen ilerisinde suyun köpürdüğünü gördü. Sonra birden... _Şlapp!_
 
-Anneannesi sevgiyle gülümsedi ve Elif'in saçlarını okşadı. ""O bir devin evi değil güzel kızım,"" dedi. ""O, İstanbul'un kalbi sayılan, dünyanın en eski ve en özel binalarından biri: Ayasofya. Hadi, gel seninle onun gizemli dünyasına adım atalım.""
+Sudan gri, parlak ve pürüzsüz bir canlı fırladı! Havada harika bir takla attı ve zarifçe tekrar suya daldı.
 
-Birlikte yavaş yavaş Ayasofya'ya doğru yürüdüler. Çok eski ahşap ve tunç kapılardan içeri girdiklerinde Elif derin bir nefes aldı. İçerisi o kadar serin, o kadar genişti ki, Elif başını yukarı kaldırdığında şapkası neredeyse arkaya düşecekti.
+""Baba, bak! Kocaman bir balık uçtu!"" diye bağırdı Kaan gözlerine inanamayarak.
 
-Tepelerinde kocaman, sanki gökyüzünde asılı kalmış gibi duran bir kubbe vardı.
+Babası yanına geldi ve denize bakıp gülümsedi. ""Çok şanslısın Kaan. Onlar balık değil, suların en neşeli dansçıları olan yunuslar. Bize eşlik etmek, bizimle oyun oynamak istiyorlar.""
 
-**Sence sadece taş, tuğla ve kum kullanarak, düşmeden havada duran bu kadar büyük bir kubbeyi o zamanlar nasıl yapmışlardır?** Eminim sen de o zamanın mimarlarının ne kadar zeki olduğunu düşünmüşsündür!
+Kaan şaşırmıştı. ""Nasıl yani? Suda yaşıyorlar, yüzgeçleri var ve harika yüzüyorlar ama balık değiller mi?""
 
-Anneannesi fısıldayarak anlatmaya başladı: ""Biliyor musun Elif, Ayasofya çok ama çok yaşlı bir yapıdır. Neredeyse 1500 yıl önce yapılmış! Üstelik bu kadar büyük olmasına rağmen yapımı sadece beş yıl sürmüş. Dünyanın dört bir yanından, en güzel mermerleri ve taşları buraya getirmişler.""
+Babası başını salladı. ""Hayır, onlar tıpkı bizim gibi memeli hayvanlardır. Yani suda yaşamalarına rağmen nefes almak için suyun dışına, yani havaya ihtiyaçları vardır.""
 
-Elif içeride yürürken ayaklarının altındaki pürüzsüz mermerlere, duvarlardaki altın gibi parlayan desenlere baktı. Etrafta devasa avizeler asılıydı. Işıkları yandığında içerisi yıldızlı bir gece gibi görünüyordu. Elif o sırada, kalın bir taşın dibinde kıvrılmış mışıl mışıl uyuyan tüylü, sevimli bir kedi gördü. Ayasofya o kadar güvenli bir yerdi ki, kediler bile burayı evi gibi seviyordu.
+**Sence yunuslar nefes almak için bizim gibi burunlarını mı kullanırlar?**
 
-""Anneanne, bu duvarlar neden bu kadar parlak?"" diye sordu Elif merakla gözlerini duvarlardan ayırmadan.
+Aslında hayır! Yunusların başlarının tam tepesinde sihirli bir kapak gibi çalışan küçük bir delik vardır. Su yüzeyine çıktıklarında bu delikten ""_Püfff!_"" diye güçlü bir şekilde içerideki eski havayı dışarı üfler ve saniyeler içinde tertemiz bir nefes alırlar. Suyun altına dalarken de bu sihirli kapak sımsıkı kapanır ve içlerine bir damla bile su kaçmaz!
 
-""Çünkü onlara mozaik deniyor canım,"" diye cevap verdi anneannesi. ""Minicik, renkli ve üzeri altınla kaplı cam parçalarını yan yana getirerek harika resimler yapmışlar. Güneş ışığı içeri vurdukça bu yüzden ışıl ışıl parlıyorlar.""
+Kaan dikkatle izlemeye devam etti. Teknenin yanında şimdi bir değil, tam üç tane yunus yüzüyordu. Sanki birbirleriyle yarışıyor, teknenin oluşturduğu dalgalarda ustaca sörf yapıyorlardı. Kaan onların bu neşeli ve oyuncu haline bayılmıştı.
 
-Biraz daha ilerlediklerinde, insanların kenardaki bir sütunun önünde toplandığını gördüler. Sütunun üzerinde küçük bir delik vardı ve insanlar sırayla o deliğe parmaklarını sokuyordu.
+O sırada yunuslardan incecik, müzik gibi sesler duymaya başladı. _İiii! Cik! Fiyuuuu!_
 
-Sence insanlar bu taş sütunun önünde neden sıraya girmiş olabilirler? Acaba gizli bir oyun mu oynuyorlar?
+Yunuslar sanki bir şarkı söylüyor ya da birbirlerine bir şeyler anlatıyor gibiydiler.
 
-Anneannesi, Elif'in meraklı bakışlarını fark etti. ""İşte burası Ayasofya'nın ünlü Dilek Sütunu,"" dedi göz kırparak. ""Buna Terleyen Direk de derler. Eski bir efsaneye göre, insanlar başparmaklarını bu deliğe sokup ellerini hiç kaldırmadan tam bir tur döndürebilirlerse dilekleri kabul olurmuş. Üstelik bu taşın eskiden insanlara şifa verdiğine inanılırmış.""
+""Babacığım, yunuslar birbirleriyle mi konuşuyor?"" diye sordu.
 
-Elif heyecanla zıpladı. ""Ben de denemek istiyorum!""
+""Evet,"" dedi babası. ""Biliyor musun, yunusların tıpkı senin ve benim gibi kendilerine ait isimleri vardır. Ama onların isimleri harflerden değil, özel ıslıklardan oluşur. Her yunusun kendine ait farklı ve özel bir ıslığı vardır. Anne yunus yavrusunu çağırmak istediğinde, onun bu özel ıslığını çalarak ona seslenir.""
 
-Sıra onlara geldiğinde Elif minik başparmağını deliğe yerleştirdi. Dilini hafifçe dışarı çıkarıp odaklandı ve elini dikkatlice çevirmeye çalıştı. _Hopp!_ Tam bir tur döndürmüştü! İçinden çok güzel bir dilek tuttu. Belki yeni bir macera kitabı, belki de yeni bir keşif yolculuğu... Bunu sadece o ve Ayasofya biliyordu.
+Kaan bunu duyunca kendi ismini ıslıkla nasıl çalabileceğini düşündü. Bu gerçekten çok eğlenceli ve zekiceydi! İsimlerini ıslıkla söyleyen sevimli canlılar...
 
-Dilek sütunundan sonra Ayasofya'nın içinde biraz daha dolaştılar. Pencerelerden süzülen güneş ışıkları, içerideki devasa hat levhalarının –yani üzerinde çok güzel yazılar olan yuvarlak dev panoların– üzerine düşüyordu. Elif bu levhaların ne kadar büyük olduğunu görünce onlara hayran kaldı.
+Yunuslar teknenin önünde o kadar hızlı yüzüyorlardı ki, Kaan onların denizin çok derin ve karanlık yerlerinde kayalara çarpmadan nasıl yüzdüklerini merak etti. Gözlerini kıstı ve suyun içine doğru bakmaya çalıştı.
 
-Elif oradan hiç ayrılmak istemedi. Yüzlerce yıl önce yaşamış çocukların da aynı taşlarda koştuğunu hayal etti. Sanki Ayasofya, biriktirdiği anıları usulca fısıldıyordu.
+**Geceleri veya denizin çok derinlerinde her yer kapkaranlıkken, sence yunuslar yollarını nasıl bulurlar? Yanlarında minik bir el feneri taşıyamazlar, değil mi?**
 
-Dışarı çıktıklarında güneş onlara gülümsüyordu. Elif dönüp o devasa pembemsi yapıya tekrar baktı. Artık onun bir devin evi olmadığını, ama gerçekten ""dev gibi"" bir tarihe sahip olduğunu biliyordu.
+İşte yunusların muazzam bir süper gücü daha: Sesle görmek! Buna 'ekolokasyon' denir. Yunuslar suyun içinde ""tık tık tık"" diye hızlı ses dalgaları gönderirler. Bu ses dalgaları gidip denizin altındaki bir kayaya veya balığa çarpar ve yankı olarak yunusa geri döner. Böylece yunus, gözleri tamamen kapalı olsa bile önünde ne olduğunu, ne kadar uzakta olduğunu ve hatta ne kadar büyük olduğunu anında anlar. Onlar karanlık suların en usta kâşifleridir!
 
-Anneannesine sarılarak, ""Teşekkür ederim anneanne,"" dedi. ""Ayasofya masallardaki saraylardan bile daha güzelmiş!""
+Gün yavaş yavaş batmaya başlarken, güneş denizi pırıl pırıl bir turuncuya boyadı. Kaan bütün gün yunusları izlemekten biraz yorulmuş, tatlı tatlı esnemeye başlamıştı. Aklına birden çok ilginç bir soru geldi.
 
-Ayasofya, rüzgârın sesiyle sanki ""Yine gel küçük gezgin,"" diyerek Elif'e veda etti. Elif, bir sonraki macerasını hayal ederek anneannesinin elinden sıkıca tuttu ve evin yolunu tuttular.
+""Baba, peki yunuslar hiç uyumaz mı? Su yüzeyine nefes almak için çıkmak zorundalarsa, uyuduklarında bunu nasıl yapıyorlar?""
 
-##### Bugün Ne Öğrendik? 
+Babası Kaan'ın saçlarını okşadı. ""İşte yunusların en büyük sırrı budur Kaan'cığım. Onlar uyurken beyinlerinin sadece bir yarısı uyur, diğer yarısı ise her zaman uyanık kalır! Üstelik uyurken bir gözleri hep açıktır. Böylece uyanık kalan yarıları, onlara nefes almak için yüzeye çıkmalarını hatırlatır ve onları tehlikelerden korur.""
 
-**Yaşı ve Yapımı:** Ayasofya yaklaşık 1500 yıllık devasa bir yapıdır ve inşaatı sadece 5 yıl gibi çok kısa bir sürede tamamlanmıştır.
+Kaan hayranlıkla yunuslara baktı. Yarısı uyuyan, yarısı uyanık kalan bir beyin... Gözleri açık uyuyan dansçılar... Denizin altı gerçekten de devasa bir mucizeydi!
+
+Artık eve dönme vakti gelmişti. Yunuslar da bunu anlamış gibi teknenin etrafında son bir kez döndüler. İçlerinden bir tanesi havaya sıçradı, zarif kuyruğunu sallayarak sanki Kaan'a ""Hoşça kal küçük dostumuz!"" dedi ve mavi suların derinliklerine doğru süzülerek gözden kayboldu.
+
+Kaan da onlara el salladı. Kalbi denizin bu muhteşem sırlarıyla sevgiyle çarpıyordu. Yunuslar ona denizin sadece kocaman bir su birikintisi değil, zeki, neşeli ve sevgi dolu canlıların evi olduğunu öğretmişti.,
+
+##### Bugün Ne Öğrendik?
+
+- **Yunuslar Memelidir:** Suda yaşamalarına ve balığa benzemelerine rağmen balık değillerdir, tıpkı bizim gibi akciğerleriyle nefes alan memeli hayvanlardır.
     
-**Büyük Kubbe:** Ayasofya'nın en ünlü özelliği, o kadar eski olmasına rağmen havada asılı gibi duran devasa ve görkemli kubbesidir.
+- **Tepedeki Nefes Deliği:** Nefes almak için burunlarını değil, başlarının en üstünde bulunan sihirli bir kapak gibi açılıp kapanan nefes deliklerini kullanırlar.
     
-**Mozaik Sanatı:** Duvarlarındaki ışıltılı resimler; minik, renkli ve altın kaplı cam parçalarının yan yana getirilmesiyle oluşan mozaik sanatıyla yapılmıştır.
+- **Islık İsimler:** Her yunusun kendine ait, imza niteliğinde özel bir ıslığı vardır ve birbirlerine bu ıslıklarla, yani isimleriyle seslenirler.
     
-**Dilek Sütunu:** İçerisinde insanların başparmaklarını çevirerek dilek tuttukları, ""Terleyen Direk"" adı verilen gizemli bir sütun bulunur.
+- **Sesle Görme (Ekolokasyon):** Karanlık sularda yönlerini bulmak ve avlanmak için etrafa ses dalgaları yayarlar, bu seslerin yankısıyla çevrelerini ""görürler"".
     
- **Kedilerin Evi:** Ayasofya kocaman bir yapı olmasının yanında, aynı zamanda sevimli kedilerin de çok sevdiği güvenli bir yuvadır.",
-                    UnlockCost = 100,
-                    IsLocked = true
-                },
-                new List<Question>
-                {
-                    new Question{ 
-                        Text = "Ayasofya'nın devasa büyüklükteki yapımı toplam kaç yıl sürmüştür?", 
-                        Options = new List<string>
-                        {
-                            "100 yıl ", 
-                            "50 yıl", 
-                            "5 yıl", 
-                            "10 yıl"
-                        },
-                        CorrectAnswer = "5 yıl",
-                        Points = 25
-                    },
-                    new Question{
-                        Text = "Ayasofya'nın duvarlarındaki minik ve parlak cam parçalarının yan yana gelmesiyle yapılan süslemelere ne ad verilir?",
-                        Options = new List<string>
-                        {
-                            "Sulu boya",
-                            "Mozaik",
-                            "Yapboz",
-                            "Çizgi film"
-                        },
-                        CorrectAnswer = "Mozaik",
-                        Points = 25
-                    },
-                    new Question{
-                        Text = "Hikâyemize göre insanların sıraya girip başparmaklarını sokarak dilek tuttukları yerin adı nedir?",
-                        Options = new List<string>
-                        {
-                            "Dilek Sütunu (Terleyen Direk)",
-                            "Sihirli Kapı",
-                            "Uçan Halı",
-                            "Konuşan Duvar"
-                        },
-                        CorrectAnswer = "Dilek Sütunu (Terleyen Direkt)",
-                        Points = 25
-                    },
-                    new Question{
-                        Text = "Elif, Ayasofya'ya uzaktan baktığında onu ilk olarak neye benzetmiştir?",
-                        Options = new List<string>
-                        {
-                            "Kocaman bir dağa",
-                            "Bir uzay gemisine",
-                            "Bir devin evine",
-                            "Büyük bir oyun parkına"
-                        },
-                        CorrectAnswer = "Bir devin evine",
-                        Points = 25
-                    }
-
-                }
-                );
-
-            AddBookIfNotExists(dbContext,
-                new Book
-                {
-                    Title = "Galata Kulesi, Gökyüzüne Uzanan Şapkalı Dev",
-                    Category = "İstanbulun Mirasları",
-                    Description = @"Meraklı Zeynep ve annesinin dar, taşlı sokaklardan geçerek gökyüzüne uzanan Galata Kulesi’ni keşfetme macerasına davetlisiniz! Bu sıcacık hikâyede çocuklar; sivri şapkalı bu dev kulenin heyecan verici tarihini, Hezarfen Ahmet Çelebi’nin uçuş efsanesini ve İstanbul’un eşsiz manzarasını eğlenerek öğrenecekler.",
-                    Content = @"Ilık bir bahar sabahıydı. Ağaçların dallarında taze yeşil yapraklar yeni yeni yüzünü gösteriyor, neşeli serçeler daldan dala atlayarak şarkı söylüyordu. Sekiz yaşındaki Zeynep, elinde küçük kırmızı fotoğraf makinesiyle İstanbul'un en hareketli, en renkli sokaklarından birinde yürüyordu. Yanında, ona her zaman yeni yerler keşfetmeyi öğreten annesi vardı.
-
-Burası Beyoğlu'ydu. Yerdeki taşlar yapboz parçaları gibi yan yana dizilmişti. Sokağın köşesinde mışıl mışıl uyuyan sarman bir kedi, yanından geçen simitçinin ""Taze simit!"" sesiyle tek gözünü açıp geri kapattı. Zeynep etrafı izlemeye o kadar dalmıştı ki, başını kaldırıp ileriye baktığında olduğu yerde kalakaldı.
-
-Binaların arasından gökyüzüne doğru uzanan kocaman, yuvarlak ve taştan bir dev onlara bakıyordu! Dev yapının en üstünde ise tıpkı masallardaki büyücülerin taktığına benzeyen sivri bir şapka vardı.
-
-Zeynep gözlerini kocaman açtı. ""Anneciğim, bak! Şurada binaların arkasında saklanan şapkalı dev de neyin nesi?"" diye sordu heyecanla.
-
-Annesi Zeynep'in şaşkın yüzüne bakıp kıkırdadı. ""O saklanan bir dev değil tatlım, İstanbul'un en yaşlı ve en bilge kulesi. Adı Galata Kulesi. Hadi, yakından bakalım mı?""
-
-Birlikte dar sokaklardan kıvrılarak kuleye doğru yürümeye başladılar. Yürüdükçe kule büyüyor, büyüyor, gökyüzünü kaplıyordu. Zeynep kuleye yaklaştığında başını iyice geriye atıp en tepeye bakmak zorunda kaldı. Kule o kadar yüksek, o kadar görkemliydi ki Zeynep kendini bir an karınca kadar küçük hissetti.
-
-**Sence yüzlerce yıl önce, günümüzdeki gibi kocaman elektrikli vinçler, kamyonlar yokken insanlar bu kadar ağır taşları üst üste dizip gökyüzüne kadar nasıl çıkmışlardır?** Eminim sen de bu işin çok büyük bir yardımlaşma ve akıl gerektirdiğini düşünüyorsundur!
-
-Kulenin devasa ahşap kapısından içeri girdiklerinde Zeynep’i serin ve gizemli bir hava karşıladı. İçerideki taş duvarlar sanki geçmişte yaşanan maceraları fısıldıyordu. Annesi biletleri alırken Zeynep duvarlara dokundu.
-
-""Biliyor musun Zeynep,"" dedi annesi, ""bu kule o kadar eskidir ki, yüzlerce yıl önce Cenevizliler adında denizci bir halk tarafından yapılmış. O zamanlar İstanbul'a denizden yaklaşan gemileri, tehlikeleri veya korsanları erkenden görebilmek için burayı bir gözetleme kulesi olarak inşa etmişler.""
-
-Zeynep kuleyi yapan denizcileri hayal etti. Sonra asansöre bindiler. Asansör _""Vıııııızz""_ diye hafif bir ses çıkararak yukarı doğru çıkmaya başladı. Zeynep’in içi kıpır kıpır oldu. Sanki sihirli bir kutunun içinde gökyüzüne tırmanıyorlardı.
-
-Yukarı çıkarken annesi anlatmaya devam etti: ""Yıllar sonra bu kule çok önemli bir görev daha üstlenmiş. İstanbul'da eski zamanlarda ahşap evler çokmuş ve bazen yangın çıkarmış. Şehrin her yerini gören bu kuleye, gözleri çok iyi gören nöbetçiler yerleştirilmiş. Bir yerde duman gördüklerinde hemen kocaman davullara vurup insanlara haber verirlermiş.""
-
-**Peki, sence bugün kulede hâlâ yangınları gözetleyen nöbetçiler var mıdır, yoksa günümüzde yangınları haber vermenin daha hızlı yolları mı var?** Evet, artık telefonlarımız ve itfaiye alarmlarımız var! Bu yüzden kule şimdi yangın nöbeti tutmak yerine, senin gibi meraklı çocukları ve dünyadan gelen misafirleri ağırlıyor.
-
-Asansör durduğunda, dar bir taş merdivenden birkaç basamak daha çıktılar. Ve işte! Kulenin en üstündeki o sivri şapkanın hemen altındaki açık balkona varmışlardı. Zeynep balkona adım attığında yüzüne ılık bir rüzgâr çarptı.
-
-Manzara karşısında nefesi kesilmişti. Bütün İstanbul devasa bir tablo gibi ayaklarının altındaydı. Masmavi deniz güneşte parlıyor, vapurlar _""Vap! Vap!""_ diye seslenerek köpüklü yollar çiziyordu. Minik oyuncak arabalara benzeyen araçlar köprülerin üzerinden geçiyordu. Zeynep kendini kollarını açsa gökyüzünde uçacak bir kuş gibi özgür hissetti.
-
-Tam bu sırada annesi Zeynep’in yanına eğilip usulca konuştu: ""Kuşlar gibi uçmak dedin de, sana kulenin en büyük sırrını vereyim mi? Yüzlerce yıl önce burada, Hezarfen Ahmet Çelebi adında çok zeki bir mucit yaşarmış. Kuşların nasıl uçtuğunu günlerce, aylarca incelemiş. Sonunda kendine tıpkı kuşlar gibi kocaman kanatlar yapmış. Bu kanatları sırtına takmış, işte tam bulunduğumuz bu noktadan kendini rüzgârın kollarına bırakmış.""
-
-Zeynep'in ağzı açık kaldı. ""Gerçekten uçmuş mu anne? Düşmemiş mi?""
-
-""Efsaneye göre uçmuş Zeynepciğim,"" diye gülümsedi annesi. ""Rüzgâr onu sırtlamış, kuşlar ona eşlik etmiş ve taa denizin karşı kıyısına, Üsküdar'a kadar süzülerek uçmuş.""
-
-Zeynep hayranlıkla denizin karşısına baktı. Uçan bir insan fikri kalbini hızlandırmıştı. Gözlerini karşı kıyıya diktiğinde, denizin tam ortasında küçücük bir adanın üstünde duran o tanıdık yapıyı gördü.
-
-""Anne bak! Kız Kulesi de orada!"" diye bağırdı parmağıyla göstererek. Galata Kulesi'nden Kız Kulesi o kadar tatlı, o kadar güzel görünüyordu ki... Zeynep hemen kırmızı fotoğraf makinesini yüzüne kaldırdı, _""Klik!""_ diye bu güzel anın fotoğrafını çekti. Ardından denizin ortasındaki Kız Kulesi'ne kocaman el salladı. ""Merhaba eski dost!"" diye fısıldadı.
-
-Galata Kulesi, Zeynep'e rüzgârıyla sıcacık bir sarılma hediye etti. Zeynep o gün, geçmişin ne kadar sihirli olduğunu ve İstanbul'un şapkalı devinin dünyadaki en güzel manzaraya sahip olduğunu öğrenmişti. Kuleye veda ederken, içindeki keşfetme duygusu çoktan yeni maceralar için kanatlanıp uçmaya başlamıştı.
-
-##### Bugün Ne Öğrendik? 
-
-**Yapım Yılı ve Yapanlar:** Galata Kulesi, çok uzun zaman önce, 1348 yılında denizci bir halk olan Cenevizliler tarafından yapılmıştır.
-
-**Eski Görevleri:** Kule ilk yapıldığında şehri ve denizdeki gemileri gözetlemek için, daha sonraları ise yüksekliği sayesinde **yangınları erken fark edip haber vermek** için kullanılmıştır.
-
-**Uçan Mucit:** Çok zeki bir mucit olan Hezarfen Ahmet Çelebi’nin, kendi yaptığı kanatları takarak Galata Kulesi'nden İstanbul Boğazı'nın karşı kıyısına kadar uçtuğu anlatılır.
-
-**Görünümü:** Kulenin en üst kısmı, uzaktan bakıldığında tıpkı kurşun rengi, sivri bir büyücü şapkasına benzer.",
-                    UnlockCost = 50,
-                    IsLocked = true
-                },
-                new List<Question>
-                {
-                    new Question{
-                        Text = "Hikâyemizde Zeynep, kuleye yaklaştığında kulenin en üst kısmını neye benzetmiştir?",
-                        Options = new List<string>
-                        {
-                            "Kocaman bir şemsiyeye",
-                            "Büyücülerin taktığı sivri bir şapkaya",
-                            "Düz bir kutuya",
-                            "Ters dönmüş bir bardağa"
-                        },
-                        CorrectAnswer = "Büyücülerin taktığı sivri bir şapkaya",
-                        Points = 25
-                    },
-                    new Question{
-                        Text = "Galata Kulesi eskiden hangi amaçla kullanılmış?",
-                        Options = new List<string>
-                        {
-                            "Okul olarak çocuklara ders vermek için",
-                            "Hastane olarak insanları iyileştirmek için",
-                            "Şehri denizden gelecek tehlikelere karşı gözetlemek ve yangınları haber vermek için",
-                            "Fabrika olarak oyuncak üretmek için"
-                        },
-                        CorrectAnswer = "Şehri denizden gelecek tehlikelere karşı gözetlemek ve yangınları haber vermek için",
-                        Points = 25
-                    },
-                    new Question{
-                        Text = "Kendi yaptığı kanatlarla kuleye çıkıp uçtuğu söylenen ünlü mucit kimdir?",
-                        Options = new List<string>
-                        {
-                            "Hezarfen Ahmet Çelebi",
-                            "Piri Reis",
-                            "Mimar Sinan",
-                            "Evliya Çelebi"
-                        },
-                        CorrectAnswer = "Hezarfen Ahmet Çelebi",
-                        Points = 25
-                    },
-                    new Question{
-                        Text = "Zeynep kulenin balkonuna çıkınca denizdeki kime/neye el sallamıştır?",
-                        Options = new List<string>
-                        {
-                            "Yunus balıklarına",
-                            "Gökyüzündeki uçaklara",
-                            "Karşı kıyıdaki ormana",
-                            "Denizin ortasında duran Kız Kulesi'ne"
-                        },
-                        CorrectAnswer = "Denizin ortasında duran Kız Kulesi'ne",
-                        Points = 25
-                    }
-                }
-                );
-
-            AddBookIfNotExists(dbContext,
-                new Book
-                {
-                    Title = "Kız Kulesi, Denizin Ortasındaki Sır",
-                    Category = "İstanbulun Mirasları",
-                    Description = @"Can ve dedesiyle İstanbul Boğazı'nda keyifli bir yolculuğa çıkıp Kız Kulesi'nin sırlarını keşfetmeye hazır mısınız? Bu sıcacık hikâye; çocukları Kız Kulesi'nin büyüleyici tarihi, gizemli efsaneleri ve Galata Kulesi'yle olan kadim dostluğuyla tanıştırıyor.",
-                    Content = @"Güneşli, pırıl pırıl bir İstanbul sabahıydı. Gökyüzünde pamuk gibi beyaz bulutlar yavaşça süzülüyor, martılar “Simiiit, simiiit!” der gibi neşeyle çığlıklar atarak uçuyordu. Yedi yaşındaki Can, dalgaların sesini dinlemeyi ve denizi izlemeyi çok severdi. O gün, en sevdiği oyun arkadaşı olan dedesiyle birlikte Üsküdar sahilinde yürüyüşe çıkmıştı.
-
-Sahilde yürürken Can’ın gözü birden denizin tam ortasında duran, küçücük bir adanın üzerindeki yapıya takıldı. Dalgalar bu yapının etrafında nazlı nazlı köpürüyor, rüzgâr etrafında dönerek esiyordu.
-
-Can, gözlerini kocaman açarak parmağıyla denizi işaret etti. “Dede, bak! Denizin tam ortasında küçücük bir ada var. Üzerinde de masallardaki gibi bir şato duruyor! Oraya nasıl gitmişler? İnsanlar denizin ortasına nasıl ev yapabilir ki?”
-
-Dedesi Can’ın bu heyecanlı haline gülümsedi. Beyaz bıyıklarını sıvazladı ve, “Orası bir şato değil Can’cığım. Orası İstanbul’un en kıymetli, en zarif incisi: Kız Kulesi. Madem bu kadar merak ettin, hadi gel seninle küçük bir keşif yolculuğuna çıkalım!” dedi.
-
-Can sevinçten havaya zıpladı. Birlikte sahildeki küçük iskeleye yürüdüler ve ahşap bir motorlu tekneye bindiler. Tekne “Pır pır pır…” diye sesler çıkararak mavi suların üzerinde kaymaya başladı. Rüzgâr Can’ın saçlarını uçuruyor, yüzüne hafifçe serin su damlaları sıçrıyordu. Burnuna mis gibi yosun kokusu geliyordu.
-
-Kuleye doğru yaklaşırken Can kuleyi daha dikkatli inceledi. Alt kısmı sağlam taşlardan yapılmıştı, üstünde ise şapkayı andıran şirin bir çatı vardı.
-
-**Sence denizin ortasında, suların üstünde duran kayalıkların üzerine böyle bir bina yapmak zor mudur?** Eminim sen de bunun çok dikkat ve çaba gerektiren bir iş olduğunu düşünmüşsündür.
-
-Dedesi tekne ilerlerken anlatmaya başladı: “Biliyor musun Can, bu kule çok ama çok yaşlıdır. Neredeyse 2500 yaşında!”
-
-Can duyduklarına inanamadı. “2500 mü?! Ama hiç de o kadar yaşlı görünmüyor. Nasıl bu kadar sağlam kalabilmiş?”
-
-“Çünkü ona yıllar boyunca çok iyi bakılmış,” dedi dedesi. “Bu kule, sadece denizin ortasında durup etrafı izleyen bir süs değilmiş. Geçmişte çok önemli görevleri varmış. Eskiden burası bir gözetleme kulesiymiş. İstanbul’a gelen gemileri buradan izlerlermiş.”
-
-Tekne kuleye iyice yaklaşmıştı. Can, kulenin en tepesindeki camlı bölüme baktı.
-
-**Sence geceleri, her yer kapkaranlıkken ve gökyüzünde yıldızlar bile yokken, kocaman gemiler kayalıklara çarpmadan yollarını nasıl bulur?**
-
-Evet, doğru tahmin ettin! Işıkla... Dedesi Can’ın düşünmesine fırsat verdikten sonra ekledi: “Kız Kulesi uzun yıllar boyunca bir deniz feneri olarak da çalışmış. Geceleri en tepesinde kocaman, parlak bir ateş yakarlarmış. Bu ışık, karanlıkta denizde yolculuk yapan gemilere ‘Buradayım, güvendesiniz, bana bakarak yolunuzu bulabilirsiniz’ dermiş. Kule, gemilerin en iyi arkadaşıymış.”
-
-Can, kulenin aslında ne kadar yardımsever olduğunu öğrenince onu daha çok sevdi.
-
-“Peki dede, neden adı Kız Kulesi? İçinde bir kız mı yaşamış?” diye sordu merakla.
-
-Dedesi şefkatle gülümsedi. “Çok eski zamanlarda, İstanbul’da kızını dünyalar kadar çok seven bir kral yaşarmış. Kral, prensesi o kadar çok severmiş ki, onun için dünyanın en güvenli, en huzurlu ve en güzel yerini yapmak istemiş. Gürültüden uzak, sadece martı seslerinin olduğu, etrafı masmavi sularla çevrili bu kuleyi o prenses için inşa ettirmiş. Prenses burada martılara simit atar, her sabah dalgaların ninnisiyle uyanır, güven içinde denizi izlermiş.”
-
-Can, prensesin denizin ortasında ne kadar huzurlu hissettiğini hayal etti. Kendisi de şu an teknede suların üzerinde çok güvende ve mutlu hissediyordu.
-
-“Bir de karşıya bak bakalım Can,” dedi dedesi, parmağıyla denizin diğer tarafını, Avrupa yakasını göstererek. “Orada, tepenin üzerinde gökyüzüne uzanan büyük bir kule daha var. Görebildin mi?”
-
-Can gözlerini kısıp baktı. “Evet, kocaman, sivri şapkalı bir kule!”
-
-“İşte onun adı da Galata Kulesi. Kız Kulesi ile Galata Kulesi, İstanbul boğazının iki farklı yakasından birbirlerine bakan iki eski dost gibidirler. Biri denizin ortasında zarifçe durur, diğeri tepeden tüm şehri izler. Geceleri ışıkları yandığında, sanki birbirleriyle gizli gizli konuşurlar.”
-
-Bu sırada tekne yavaşça adanın iskelesine yanaştı. “Güm!” diye hafifçe lastiklere çarparak durdu. Can büyük bir heyecanla karaya, yani denizin ortasındaki bu minik adaya ayak bastı.
-
-Kulenin içine girdiklerinde serin, taştan duvarlar onları karşıladı. Dar ve dönen merdivenlerden yavaş yavaş, döne döne yukarı tırmandılar. En tepeye, o camlı bölüme çıktıklarında Can gördüğü manzara karşısında büyülenmişti.
-
-Bütün İstanbul ayaklarının altındaydı. Bir yanda Topkapı Sarayı, diğer yanda vapurlar, köprü ve uzakta onlara göz kırpan Galata Kulesi... Denizin kokusu buradan daha da güzel geliyordu.
-
-Can derin bir nefes aldı ve dedesine sarıldı. “İyi ki beni buraya getirdin dede. Kız Kulesi sadece taşlardan yapılmış eski bir bina değilmiş. O, hem prensesin güvenli evi, hem gemilerin yol göstericisi, hem de Galata Kulesi’nin en iyi arkadaşıymış!”
-
-Kız Kulesi, güneşte parlayan camlarıyla sanki Can’ın bu sözlerini duymuş ve ona sevgiyle gülümsemişti. O günden sonra Can, ne zaman sahile inip denize baksa, denizin ortasındaki bu sihirli dostuna hep el salladı.
-
-##### Bugün Ne Öğrendik? 
-
-**Yaşı:** Kız Kulesi, yaklaşık 2500 yıllık tarihiyle İstanbul’un en eski ve özel yapılarından biridir.
-
-**Yeri:** Üsküdar’ın Salacak sahilinde, denizin ortasındaki küçücük bir adanın üzerine inşa edilmiştir.
-
-**Görevleri:** Yüzyıllar boyunca sadece güzel görünmekle kalmamış; gözetleme kulesi ve gece gemilere yol gösteren bir deniz feneri olarak kullanılmıştır.,,
-
-**İsminin Hikâyesi:** Eski bir efsaneye göre, kızını çok seven bir kral, onu güven içinde yaşatmak için bu kuleyi yaptırmıştır.
-
-**Kulelerin Dostluğu:** Kız Kulesi, denizin karşı kıyısında yer alan Galata Kulesi ile yüzyıllardır birbirine bakan iki eski dost gibidir.",
+- **Yarım Uyku:** Yunuslar uyurken beyinlerinin sadece yarısı uyur ve bir gözleri daima açık kalır. Böylece boğulmazlar ve nefes almak için su yüzeyine çıkabilirler.",
                     UnlockCost = 0,
                     IsLocked = false
                 },
                 new List<Question>
                 {
                     new Question{
-                        Text = "Hikâyemize göre Kız Kulesi denizin neresinde bulunmaktadır?",
+                        Text = "Hikâyemize göre yunuslar nefes almak için vücutlarının neresini kullanırlar?",
                         Options = new List<string>
                         {
-                            "Denizin en derin, karanlık dibinde ",
-                            "Kumsalda, kumların tam üzerinde",
-                            "Denizin ortasındaki küçücük bir adanın üzerinde",
-                            "Dağların en yüksek zirvesinde"
+                            "Ağızlarını",
+                            "Kuyruklarını",
+                            "Başlarının üstündeki nefes deliğini",
+                            "Gözlerini"
                         },
-                        CorrectAnswer = "Denizin ortasındaki küçücük bir adanın üzerinde",
+                        CorrectAnswer = "Başlarının üstündeki nefes deliğini",
                         Points = 25
                     },
                     new Question{
-                        Text = "Kule, geceleri karanlıkta denizde yolculuk yapan gemilere nasıl yardım ediyormuş?",
+                        Text = "Yunuslar birbirlerine seslenmek veya isimlerini söylemek için hangi yöntemi kullanırlar?",
                         Options = new List<string>
                         {
-                            "Onlara yüksek sesle şarkı söyleyerek",
-                            "En tepesinde büyük bir ateş/ışık yakarak",
-                            "Gemilerin etrafına halatlar bağlayarak",
-                            "Denizin suyunu ısıtarak"
+                            "Mektup yazarlar",
+                            "Kendilerine özel ıslıklar çalarlar",
+                            "Kanat çırparlar",
+                            "Davul çalarlar"
                         },
-                        CorrectAnswer = "En tepesinde büyük bir ateş/ışık yakarak",
+                        CorrectAnswer = "Kendilerine özel ıslıklar çalarlar",
                         Points = 25
                     },
                     new Question{
-                        Text = "Kız Kulesi'nin İstanbul boğazının diğer yakasında bulunan, sivri şapkalı en iyi dostu hangi kuledir?",
+                        Text = "Karanlık denizlerde yunusların yollarını kaybetmemesini sağlayan süper güçleri (ekolokasyon) nasıl çalışır?",
                         Options = new List<string>
                         {
-                            "Galata Kulesi",
-                            "Saat Kulesi",
-                            "Eyfel Kulesi",
-                            "Beyaz Kule"
+                            "Ses dalgaları gönderip yankısını dinleyerek",
+                            "El feneri yakarak",
+                            "Yıldızlara bakarak",
+                            "Diğer balıklara yol sorarak"
                         },
-                        CorrectAnswer = "Galata Kulesi",
+                        CorrectAnswer = "Ses dalgaları gönderip yankısını dinleyerek",
                         Points = 25
                     },
                     new Question{
-                        Text = "Kız Kulesi konuşabilseydi, yanından geçen gemilere ilk olarak ne söylerdi?",
+                        Text = "Yunusların uyku düzeni ile ilgili en ilginç özellik aşağıdakilerden hangisidir?",
                         Options = new List<string>
                         {
-                            "Lütfen beni de yanınızda götürün!",
-                            "Dikkatli olun, ışığımı takip ederseniz güvende olursunuz!",
-                            "Denizin suyu bugün çok soğuk, yüzmeyin.",
-                            "Burada martılarla oynamak çok sıkıcı."
+                            "Sadece kışın uyumaları",
+                            "Uyurken deniz dibindeki kumlara saklanmaları",
+                            "Uyurken beyinlerinin sadece yarısının uyuması ve bir gözlerinin açık kalması",
+                            "Uyurken çok yüksek sesle horlamaları"
                         },
-                        CorrectAnswer = "Dikkatli olun, ışığımı takip ederseniz güvende olursunuz!",
+                        CorrectAnswer = "Uyurken beyinlerinin sadece yarısının uyuması ve bir gözlerinin açık kalması",
                         Points = 25
                     }
                 }
                 );
-
             AddBookIfNotExists(dbContext,
                 new Book
                 {
-                    Title = "Yerebatan Sarnıcı, Yerin Altındaki Saklı Orman",
-                    Category = "İstanbulun Mirasları",
-                    Description = @"Sıcak bir yaz gününde, meraklı Ali ve maceracı teyzesiyle birlikte yerin altındaki serin ve gizemli bir sarayı keşfetmeye hazır mısınız? Bu heyecan verici hikâyede çocuklar; Yerebatan Sarnıcı'nın sudan yükselen yüzlerce sütununu, efsanevi Medusa başlarını ve karanlık sularda sessizce yüzen balıkları eğlenerek öğrenecekler.",
-                    Content = @"Sıcak bir Temmuz öğleden sonrasıydı. Güneş, İstanbul'un sokaklarını fırın gibi ısıtmıştı. Yedi yaşındaki Ali, elindeki erimeye başlayan limonlu dondurmasını kurtarmaya çalışarak Defne teyzesinin peşinden yürüyordu. Defne teyzesi tarih kokan yerleri gezmeyi ve saklı sırları ortaya çıkarmayı çok severdi.
+                    Title = "Akıllı Ahtapotlar, Derinlerin Gizemli Dahileri",
+                    Category = "Denizin Derinlikleri",
+                    Description = @"Küçük kâşif Deniz'in sarı denizaltısıyla okyanusun derinliklerine dalarak denizlerin en zeki saklambaç ustasıyla tanışmasına hazır mısınız? Bu eğlenceli macerada çocuklar; ahtapotların renk değiştirme sihrini, üç kalpli olmalarının sırrını ve sekiz kollu bu sevimli dahilerin şaşırtıcı zekâsını eğlenerek keşfedecekler.",
+                    Content = @"Güneşli, harika bir gündü. Gökyüzü masmavi, deniz ise çarşaf gibi dümdüzdü. Deniz'in çok sevdiği, camları kocaman, pırıl pırıl sarı renkte minik bir denizaltısı vardı. Adı ""Köpük""tü. Deniz, Köpük ile okyanusun altına dalmayı ve yeni canlılarla tanışmayı her şeyden çok severdi.
 
-Sultanahmet Meydanı'nda yürürken teyzesi aniden durdu. Ali'ye dönüp, ""Bu sıcaktan kaçıp, yerin altındaki serin ve gizli bir saraya gitmeye ne dersin?"" diye sordu göz kırparak.
+Bugün Deniz'in gizli bir görevi vardı. Arkadaşı yunuslar ona denizlerin altında yaşayan çok zeki bir canlıdan bahsetmişti. Yunuslar ona, ""Derinlerin Gizemli Dahisi"" diyorlardı. Deniz, bu gizemli dahiyi bulmak için Köpük'ün direksiyonuna geçti ve denizaltının kapağını kapattı.
 
-Ali'nin gözleri kocaman oldu. Yerin altında bir saray mı? Hem de serin? ""Evet, evet, gidelim!"" diye zıpladı.
+_Glu glu glu..._ Köpük, yavaşça suyun altına doğru süzülmeye başladı.
 
-Birlikte tuğladan yapılmış küçük bir binadan içeri girdiler. Biletlerini aldıktan sonra, aşağıya doğru uzanan taş merdivenlerden yavaş yavaş inmeye başladılar. Aşağı indikçe hava serinliyor, dışarıdaki o sıcak ve gürültülü şehirden adım adım uzaklaşıyorlardı.
+Suyun altı tıpkı sihirli bir ormana benziyordu. Rengârenk mercanlar, suyun akıntısıyla dans eden yeşil yosunlar ve sürü halinde gezen minik balıklar harika görünüyordu. Deniz, denizaltının farlarını yaktı ve büyük kayalıkların arasına doğru ilerledi. Her yer çok sessizdi.
 
-**Sence yerin altı neden her zaman dışarıdaki havadan daha serin olur?** Eminim sen de toprağın güneşi içeri almadığını, bu yüzden bir battaniye gibi orayı serin tuttuğunu tahmin etmişsindir!
+Deniz, üzeri yosun tutmuş, gri ve pütürlü kocaman bir kayaya dikkatle bakıyordu. O sırada inanamayacağı bir şey oldu! Gri kaya birdenbire iki kocaman göz açtı ve Deniz'e bakıp göz kırptı!
 
-Ali merdivenlerin sonuna geldiğinde gördüğü manzara karşısında ağzı şaşkınlıktan ""O"" harfi gibi açıldı. Karanlık, sarımsı tatlı bir ışıkla aydınlatılmış koca bir salonun içindeydi. Ama bu salonun zemini taş değil, pırıl pırıl suydu!
+**Sence hiç kıpırdamadan duran, sıradan gri bir kaya durup dururken birisine göz kırpabilir mi?**
 
-Suyun içinden gökyüzüne, yani tavana doğru uzanan yüzlerce taş direk vardı. Bu direkler sanki taştan ağaçlara benziyordu, burası yer altındaki bir orman gibiydi.
+Haklısın, tabii ki kayalar göz kırpmaz! Deniz şaşkınlıkla camdan bakarken, o taş zannettiği şey birdenbire değişmeye başladı. Önce gri rengi açıldı, sonra üzeri minik kırmızı ve turuncu beneklerle doldu. Altından uzun, kıvrımlı kollar çıktı. O bir kaya değildi; inanılmaz bir saklambaç ustası olan bir ahtapottu!
 
-""Teyze, burası gerçekten bir saray!"" diye fısıldadı Ali. Sesinin kocaman tavanlarda hafifçe yankılanması çok hoşuna gitmişti.
+Ahtapot kollarını nazikçe sallayarak Köpük'ün camına yaklaştı. Sanki ""Merhaba, ben de seni bekliyordum!"" diyordu.
 
-Defne teyzesi gülümsedi. ""İnsanlar buraya çok görkemli olduğu için 'Yerebatan Sarayı' demeyi çok sever. Ama buranın gerçek adı Yerebatan Sarnıcı. Sarnıç, su deposu demektir Ali'ciğim. Çok eski zamanlarda, İstanbul'un padişahları ve halkı susuz kalmasın diye yapılmış. Yağmur sularını ve çok uzaklardaki ormanlardan gelen suları burada, yerin altında biriktirirlermiş.""
+Ahtapotların tam sekiz tane uzun kolu vardır. Deniz, bu kolların altındaki minik, yuvarlak vantuzları, yani yapışkan düğmecikleri fark etti. Ahtapot, bu düğmecikler sayesinde hem kayalara sıkıca tutunabiliyor hem de nesneleri inceleyebiliyordu. Ama daha da ilginci, ahtapotlar kollarındaki bu düğmeciklerle dokundukları her şeyin tadını alabilirler!
 
-Ali, suyun üzerinde uzanan güvenli ahşap yollarda yürümeye başladı. Su o kadar durgundu ki, sütunların yansıması bir ayna gibi suya düşüyordu. Tam o sırada suda hareket eden kırmızımsı bir şey gördü.
+**Düşünsene, parmaklarınla en sevdiğin çikolatalı pastaya sadece dokunarak onun ne kadar tatlı olduğunu anladığını! Sence de çok eğlenceli ve sihirli bir özellik değil mi?**
 
-""Teyze bak, balık!"" diye bağırdı heyecanla. Evet, bu karanlık ve serin suların içinde irili ufaklı balıklar yüzüyordu. Kimi sakince süzülüyor, kimi ahşap yolun altından geçip kayboluyordu. Sarnıcın sessiz ve sevimli bekçileri gibiydiler.
+Deniz bu gizemli canlıyı hayranlıkla izlerken, ahtapot birden oyun oynamak istedi. İki kayanın arasındaki küçücük, incecik bir yarığa doğru yüzdü. Deniz kendi kendine, ""Eyvah! O kadar büyük ki oraya asla sığamaz, kesinlikle sıkışıp kalacak,"" diye düşündü. Ama ahtapot sanki sudan yapılmış gibi akıp o küçücük delikten kolayca geçiverdi.
 
-Biraz ilerlediklerinde, diğerlerinden çok daha farklı görünen bir sütun buldular. Üzerinde sanki gözyaşı döküyormuş gibi oymalar vardı ve bu sütun hep ıslaktı.
+Çünkü ahtapotların vücutlarında hiç kemik yoktur! İçlerinde onları sertleştiren bir iskelet bulunmadığı için, gözlerinin sığabildiği minicik deliklerden bile hiç zorlanmadan, kıvrılarak geçebilirler. Yumuşacık vücutları onların en büyük gücüdür.
 
-""Buna 'Ağlayan Sütun' veya 'Gözyaşı Sütunu' diyorlar,"" dedi teyzesi. ""Efsaneye göre, bu sarnıcı inşa ederken çok yorulan işçilerin anısına ağlıyormuş."" Ali, minik parmağıyla sütunun üzerindeki damla şekillerine dokundu. Sütunun ne kadar vefalı olduğunu düşündü.
+Ahtapot deliğin diğer tarafından çıkıp neşeyle tekrar Deniz'in yanına geldi. Bu harika canlının sırları saymakla bitmiyordu. Bizim göğsümüzde ""güm güm"" atan sadece bir tane kalbimiz var, değil mi? Ama bu sualtı dahilerinin tam üç tane kalbi vardır! Evet, yanlış duymadın! Üç kalp, okyanusun derinliklerinde çok daha enerjik ve hızlı yüzmelerini sağlar.
 
-Ahşap yolda yürümeye devam ettiler. Sarnıcın en köşesine, en kuytu ve gizemli yerine doğru yaklaşıyorlardı. Teyzesi, ""Şimdi sana buranın en büyük sırrını göstereceğim,"" dedi heyecanlı bir sesle.
+**Peki, bizim dizimiz kanadığında kanımızın rengi kırmızı olur. Sence üç kalpli ahtapotların kanı ne renktir? Kırmızı mı, yeşil mi, yoksa mavi mi?**
 
-Suyun içinden yükselen iki kısa sütunun tam altına baktılar. Sütunların altında destek olarak kullanılan, taştan yapılmış iki kocaman yüz duruyordu! Ama bunlar düz durmuyordu; biri yan yatmış, diğeri ise tamamen ters çevrilmişti.
+Bunu tahmin etmek biraz zor olabilir. Ahtapotların kanı mavidir! Kanlarında bizimki gibi demir değil, bakır adı verilen bir madde bulunur. Bu da onları tıpkı masallardaki sihirli yaratıklara benzetir.
 
-**Sence bu devasa taş yüzler neden düz değil de, birisi yan diğeri ise ters duracak şekilde konulmuş olabilir?**
+Derken, denizaltının ışığı kumların üzerinde parlayan bir nesneye takıldı. Bu, deniz dibine düşmüş kapalı bir cam kavanozdu. İçinde ise parlak, incili bir denizkabuğu vardı. Deniz, ahtapotun ne yapacağını merakla izledi. Ahtapot kavanoza yaklaştı. Önce sekiz koluyla kavanozu sıkıca sardı. Sonra kollarını ustaca kullanarak kavanozun kapağını tıpkı bizim gibi çevirmeye başladı. _Tık, tık, tık..._ ve kapak açıldı!
 
-""Bunlar efsanevi yılan saçlı kadın Medusa'nın başları,"" diye açıkladı teyzesi gülümseyerek. ""Neden ters ve yan konuldukları tam bir sır! Kimisi o zamanlar eski inanışlardaki kötü ruhları uzaklaştırmak için ters koyduklarını söyler, kimisi de sütunların boyuna tam uysun diye inşaat ustalarının böyle yerleştirdiğini düşünür. Belki de eski ustalar sadece bizim kafamızı karıştırmak istemiştir, ne dersin?""
+Evet, ahtapotlar kapalı kavanozları açabilecek, labirentleri geçebilecek ve zor bulmacaları çözebilecek kadar akıllıdırlar. İşte yunusların onlara ""Derinlerin Gizemli Dahileri"" demesinin sebebi buydu!
 
-Ali kıkırdadı. Ters duran taş yüze el salladı. Hikâyelerdeki canavarlar hiç de korkutucu değildi burada. Aksine çok ilginçti. Medusa sanki saklambaç oynarken taşların arkasında yakalanmış gibi duruyordu.
+Ahtapot, içindeki parlak denizkabuğunu alıp kollarının arasında sevgiyle tuttu. Sonra Deniz'e dönüp rengini mutluluktan tatlı bir pembeye çevirdi.
 
-Yerebatan Sarnıcı'nın serin, sessiz ve büyülü dünyasında biraz daha dolaştılar. Ali, yerin altında böyle muazzam bir ormanın, suyun ve tarihin saklı olmasına inanamıyordu. Dışarı çıkmak için merdivenleri tırmanırken, yukarıda, yollarda yürüyen insanların ayaklarının altında nasıl bir mucize yattığından habersiz olduklarını düşündü. Ama o artık bu sırrı biliyordu.
+Deniz, bu zeki, üç kalpli, mavi kanlı ve şekilden şekle giren arkadaşıyla tanıştığı için dünyanın en şanslı kâşifi gibi hissediyordu. Gitme vakti gelmişti. Denizaltının camından ona el salladı. Ahtapot da sekiz kolundan biriyle Deniz'e veda etti ve suyunu püskürterek hızla uzaklaştı. Birkaç saniye içinde tekrar bir kayanın rengini almış ve saklambaç oyununda görünmez olmuştu.
 
-Sokağa çıkıp güneşi tekrar gördüklerinde Ali teyzesine sıkıca sarıldı. ""Burası benim en sevdiğim gizli karargâhım oldu teyze! Acaba İstanbul'un altında daha başka hangi sırlar saklı?""
+Deniz, sarı denizaltısı Köpük ile yukarı, Güneş'e doğru çıkarken kıkırdadı. Denizlerin altı gerçekten de devasa bir sihirbazlık sahnesiydi ve ahtapotlar bu sahnenin en büyük yıldızlarıydı.
 
-Defne teyzesi güldü, ""Onu da bir sonraki maceramızda keşfederiz!""
+##### Bugün Ne Öğrendik?
 
-##### Bugün Ne Öğrendik? 
+- **Sekiz Kol ve Tadım Sihri:** Ahtapotların sekiz tane kolu vardır ve bu kolların üzerindeki minik vantuzlar sayesinde dokundukları şeylerin tadını alabilirler.
+    
+- **Kemiksiz Vücut:** Vücutlarında hiç kemik olmadığı için, çok dar ve küçücük yerlerden bile sıvı gibi süzülerek geçebilirler.
+    
+- **Renkli Kamuflaj:** Ahtapotlar tehlikelerden saklanmak veya avlanmak için renklerini ve derilerinin şeklini saniyeler içinde değiştirerek bulundukları yere uyum sağlarlar.
+    
+- **Üç Kalp ve Mavi Kan:** İnanması güç olsa da ahtapotların tam üç tane kalbi vardır ve kanlarının rengi mavidir!
+    
+- **Derinlerin Dahileri:** Ahtapotlar okyanusun en zeki canlılarından biridir; kapalı kavanozların kapaklarını çevirip açabilir, bulmacaları çözebilirler.",
+                    UnlockCost = 50,
+                    IsLocked = true
+                },
+                new List<Question>
+                {
+                    new Question{
+                        Text = "Hikâyemize göre ahtapotlar kollarının altındaki minik yapışkan düğmeler (vantuzlar) sayesinde ne yapabilirler?",
+                        Options = new List<string>
+                        {
+                            "Çok hızlı koşabilirler",
+                            "Dokundukları şeylerin tadını alabilirler",
+                            "Şarkı söyleyebilirler",
+                            "Ateş yakabilirler"
+                        },
+                        CorrectAnswer = "Dokundukları şeylerin tadını alabilirler",
+                        Points = 25
+                    },
+                    new Question{
+                        Text = "Ahtapotlar neden küçücük ve dar deliklerden bile kolayca sıkışmadan geçebilirler?",
+                        Options = new List<string>
+                        {
+                            "Çünkü vücutlarında hiç kemik yoktur",
+                            "Çünkü çok hızlıdırlar",
+                            "Çünkü özel bir sabun kullanırlar",
+                            "Çünkü görünmez olma güçleri vardır"
+                        },
+                        CorrectAnswer = "Çünkü vücutlarında hiç kemik yoktur",
+                        Points = 25
+                    },
+                    new Question{
+                        Text = "Ahtapotların vücudunda hayat suyu pompalayan kaç tane kalp bulunur?",
+                        Options = new List<string>
+                        {
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        },
+                        CorrectAnswer = "3",
+                        Points = 25
+                    },
+                    new Question{
+                        Text = "Deniz'in okyanusta gördüğü ahtapot, kumların üzerindeki kapalı cam kavanozu bulunca zekâsını kullanarak ne yaptı?",
+                        Options = new List<string>
+                        {
+                            "Kavanozu alıp denizin dibine gömdü",
+                            "Kollarıyla kavanozun kapağını çevirerek açtı",
+                            "Kavanozun üstüne oturup uyudu",
+                            "Kavanozu Deniz'e fırlattı"
+                        },
+                        CorrectAnswer = "Kollarıyla kavanozun kapağını çevirerek açtı",
+                        Points = 25
+                    }
+                }
+                );
+            AddBookIfNotExists(dbContext,
+                new Book
+                {
+                    Title = "Sevimli Denizatları, Mercanların Minik Bekçileri",
+                    Category = "Denizin Derinlikleri",
+                    Description = @"Meraklı kâşif Ada’nın sihirli şnorkeliyle rengârenk mercan ormanlarına dalarak denizlerin en gizemli ve narin canlısıyla tanışmasına katılmaya ne dersiniz? Bu heyecan verici hikâyede çocuklar; babalarının karnında büyüyen yavruları, fırtınada akıntıya kapılmamak için mercanlara sarılan kıvrık kuyrukları ve dik yüzen denizatlarının sihirli dünyasını eğlenerek keşfedecekler.",
+                    Content = @"Gözlerini kapat ve kendini masmavi, ılık bir denizin kıyısında hayal et. Su o kadar berrak ki, güneş ışıkları denizin dibindeki altın sarısı kumların üzerinde dans ediyor. Sekiz yaşındaki Ada, denizi çok seven, saçları rüzgârda dalgalanan neşeli ve minik bir kâşifti. Ada'nın en büyük hayali, okyanusun derinliklerindeki gizli dünyaları görmekti.
 
-**Sarnıç Ne Demek?:** Yerebatan Sarnıcı, çok eski zamanlarda şehrin su ihtiyacını karşılamak için yapılmış yer altındaki devasa bir su deposudur.
+Bir sabah, en sevdiği pembe şnorkelini ve deniz gözlüğünü taktı. Suya usulca, ""_Cumburlop!_"" diye atladı.
 
-**Diğer Adı:** İçinde tam 336 tane sütun bulunduğu ve çok görkemli olduğu için halk arasında ""Yerebatan Sarayı"" olarak da bilinir.
+Suyun altı bambaşka bir gezegen gibiydi! Mor, sarı ve kırmızı renklerde kocaman mercanlar tıpkı çiçek açmış ağaçlara benziyordu. Minik, gümüş renkli balıklar sürü halinde bir sağa bir sola hızla yüzüyordu. Ada, ellerini ve ayaklarını çırparak bu mercan ormanının içine doğru süzüldü.
 
-**Suyun Misafirleri:** Bu kocaman yer altı havuzunun sularında yaşayan, sarnıcın bekçileri gibi yüzen sevimli balıklar vardır.
+Büyük, yeşil yosunlarla kaplı bir mercanın yanından geçerken aniden durdu. Gözlerine inanamıyordu! Yeşil yosunun bir parçası sanki yavaşça kımıldamıştı. Ada biraz daha yaklaştı. Yosun sandığı o incecik şeyin üzerinde fıldır fıldır dönen iki tane minik, siyah göz vardı!
 
-**Ağlayan Sütun:** Sarnıçtaki sütunlardan birinin üzerinde gözyaşı damlasına benzeyen şekiller vardır ve üzeri hep ıslak olduğu için ona ""Ağlayan Sütun"" denir.
+**Sence sıradan bir yosunun etrafa merakla bakan boncuk gibi gözleri olabilir mi?**
 
-**Medusa Başları:** Sarnıcın en köşesinde, sütunların altında destek olarak kullanılan biri ters, diğeri yan duran iki tane gizemli ve efsanevi Medusa heykeli bulunur.",
+Elbette olamaz! Ada, karşısında duran bu gizemli canlıyı dikkatle inceledi. Başı tıpkı minyatür bir ata benziyordu! Ağzı ise ince uzun bir pipet gibiydi. Ama en ilginci, vücudunun alt kısmıydı. Kuyruğu tıpkı ağaç dallarına tutunan sevimli bir maymunun kuyruğu gibi içe doğru kıvrıktı.
+
+Ada kalbinin hızla çarptığını hissetti. O, efsanelerde duyduğu ama daha önce hiç görmediği bir canlıyı bulmuştu: Bir denizatı!
+
+Bu minik canlı o kadar küçüktü ki, neredeyse Ada'nın eli kadardı. Üstelik yeşil yosunların arasında o kadar iyi saklanmıştı ki, rengini tıpkı yosunlar gibi yeşile çevirmişti. Denizatları tıpkı birer bukalemun gibi saklanmak istediklerinde renk değiştirebilirlerdi. Bu yüzden onlar mercanların minik, görünmez bekçileriydi.
+
+Ada denizatının nasıl yüzeceğini çok merak etti. Onu izlemek için olduğu yerde sessizce bekledi.
+
+**Düşünsene, balıklar denizde ok gibi yatay bir şekilde, dümdüz yüzerler. Sence denizatları da onlar gibi mi yüzer?**
+
+Hayır! Denizatları diğer balıklar gibi yüzmezler. O, denizin içinde dimdik, tıpkı ayakta duran bir insan gibi yüzmeye başladı. Sırtındaki küçücük, şeffaf yüzgeci o kadar hızlı ""pır pır"" ediyordu ki, Ada bu yüzgeci bir helikopter pervanesine benzetti. Boynundaki minik yüzgeçler de ona yön veriyordu. Ama çok yavaş yüzüyordu.
+
+Tam o sırada, denizin dibinde hafif bir akıntı başladı. Su, Ada'nın saçlarını geriye doğru dalgalandırdı. Denizatları çok iyi yüzücüler olmadıkları için bu akıntı onu uzaklara sürükleyebilirdi.
+
+**Peki, suyun altında güçlü bir akıntı geldiğinde, bu minik ve narin canlı sürüklenmemek için sence ne yapmıştır?**
+
+Ada hayranlıkla izledi. Denizatı hiç panik yapmadı. O kıvrık, maymun kuyruğuna benzeyen kuyruğunu hemen yanındaki sağlam bir mercan dalına sıkıca doladı! Tıpkı bizim rüzgârlı bir havada bir direğe sarılıp tutunmamız gibi... Artık güvendeydi. Su onu ne kadar iterse itsin, kuyruğu sayesinde mercandan ayrılmıyordu.
+
+Denizatı mercana tutunurken bir yandan da karnını doyurmaya karar verdi. Etraftan geçen minicik su piresi gibi canlılara doğru uzun ağzını uzattı ve ""_Hüüp!_"" diye onları tıpkı bir elektrik süpürgesi gibi içine çekti. Biliyor musun, denizatlarının dişleri ve bizimki gibi yiyecekleri biriktiren bir mideleri yoktur. Yediklerini hemen sindirirler, bu yüzden sürekli, ama sürekli yemek yemek zorundadırlar.
+
+Ada bu minik dostunu izlerken biraz ileride başka bir denizatı daha gördü. Ama bu denizatı diğerinden biraz farklıydı. Karnı kocaman, şişkinceydi! Sanki içine bir pinpon topu saklamış gibi görünüyordu.
+
+**Doğada yavrularını karnında taşıyanlar genellikle annelerdir. Sence bu şişman karınlı denizatı anne miydi?**
+
+İşte denizatlarının en büyük ve en sihirli sırrı buradaydı! Ada, sualtı belgesellerinde izlediği bir bilgiyi hatırladı: Denizatlarında yavruları anneler değil, babalar taşırdı! Evet, bu şişman karınlı olan bir baba denizatıydı. Babaların karnında tıpkı kangurularınki gibi güvenli bir kese bulunur. Anne denizatı yumurtaları bu keseye bırakır ve baba onları yavrular büyüyene kadar kendi karnında taşır.
+
+Ada heyecanla nefesini tuttu, çünkü inanılmaz bir şeye şahit oluyordu. Baba denizatının karnı yavaşça kasıldı ve kesesinin içinden iğne ucu kadar küçük, şeffaf, minicik denizatları teker teker suya fırlamaya başladı! _Pıt... Pıt... Pıt..._
+
+Onlarca minik yavru denizatı, babalarının karnından çıkıp anında dik bir şekilde yüzmeye ve kuyruklarıyla etraftaki minik yosunlara tutunmaya başladılar. Tıpkı babalarının kopyası gibiydiler ama çok daha küçüktüler.
+
+Ada, bu sihirli anı hayatı boyunca hiç unutmayacağını biliyordu. Mercanların bu narin, zeki ve çalışkan bekçilerine usulca el salladı. Yavru denizatları da minik yüzgeçlerini çırparak sanki ona karşılık verdiler. Ada, içi sevgi ve mutlulukla dolarak güneşin parladığı su yüzeyine doğru yüzmeye başladı. Denizin derinlikleri, beklediğinden çok daha muhteşem sürprizlerle doluydu.
+
+##### Bugün Ne Öğrendik?
+
+- **Dik Yüzen Canlılar:** Denizatları diğer balıklar gibi yatay değil, suyun içinde dimdik (ayakta duruyormuş gibi) yüzerler.
+    
+- **Baba Kangurular:** Dünyada yavrularını karnında taşıyıp doğuran tek erkek canlı, baba denizatlarıdır. Babaların karnında yavruları büyüttükleri özel bir kese bulunur.
+    
+- **Kıvrık Kuyruk:** Denizatlarının maymun kuyruğuna benzeyen, bir şeyleri kavrayabilen güçlü kuyrukları vardır. Bu sayede akıntıda sürüklenmemek için mercanlara ve yosunlara sıkıca tutunurlar.
+    
+- **Dişsiz ve Midesiz:** Ağızları uzun bir pipete benzer. Dişleri ve mideleri olmadığı için avlarını elektrik süpürgesi gibi içlerine çekerler ve doymak için sürekli yemek zorundadırlar.
+    
+- **Bukalemun Gibi:** Tehlikelerden korunmak ve saklanmak için tıpkı bukalemunlar gibi renk değiştirebilirler.",
+                    UnlockCost = 100,
+                    IsLocked = true
+                },
+                new List<Question>
+                {
+                    new Question{
+                        Text = "Hikâyemize göre denizatları suyun içinde nasıl yüzerler?",
+                        Options = new List<string>
+                        {
+                            "Sırtüstü yatarak",
+                            "Diğer balıklar gibi ok gibi yatay bir şekilde",
+                            "Dimdik, ayakta duruyormuş gibi",
+                            "Kendi etrafında taklalar atarak"
+                        },
+                        CorrectAnswer = "Dimdik, ayakta duruyormuş gibi",
+                        Points = 25
+                    },
+                    new Question{
+                        Text = " Suyun altında güçlü bir akıntı geldiğinde denizatları sürüklenmemek için ne yaparlar?",
+                        Options = new List<string>
+                        {
+                            "Kumların altına saklanırlar",
+                            "Maymun gibi kıvrık kuyruklarıyla mercanlara veya yosunlara tutunurlar",
+                            "Çok hızlı yüzerek kaçarlar",
+                            "Su yüzeyine çıkıp beklerler"
+                        },
+                        CorrectAnswer = "Maymun gibi kıvrık kuyruklarıyla mercanlara veya yosunlara tutunurlar",
+                        Points = 25
+                    },
+                    new Question{
+                        Text = "Denizatları yemeklerini nasıl yerler?",
+                        Options = new List<string>
+                        {
+                            "Keskin dişleriyle ısırarak",
+                            "Yemeklerini elleriyle tutarak",
+                            "Pipete benzeyen ağızlarıyla içlerine hüpleterek (çekerek)",
+                            "Yemeklerini taşlarla kırarak"
+                        },
+                        CorrectAnswer = "Pipete benzeyen ağızlarıyla içlerine hüpleterek (çekerek)",
+                        Points = 25
+                    },
+                    new Question{
+                        Text = "Denizatlarının doğadaki diğer birçok canlıdan ayrılan, yavru bakımıyla ilgili en ilginç özelliği nedir?",
+                        Options = new List<string>
+                        {
+                            "Yavrularına şarkı söylemeleri",
+                            "Yavruları annelerin değil, babaların kendi karnındaki kesede taşıması",
+                            "Yavrularını deniz kabuklarının içine saklamaları",
+                            "Yavrularını sadece geceleri beslemeleri"
+                        },
+                        CorrectAnswer = "Yavruları annelerin değil, babaların kendi karnındaki kesede taşıması",
+                        Points = 25
+                    }
+                }
+                );
+            AddBookIfNotExists(dbContext,
+                new Book
+                {
+                    Title = "Şarkı Söyleyen Balinalar, Okyanusun Dev Korosu",
+                    Category = "Denizin Derinlikleri",
+                    Description = @"Küçük kâşif Nil ve deniz bilimci amcasıyla birlikte uçsuz bucaksız okyanusta dünyanın en büyük müzik festivaline katılmaya ne dersiniz? Bu büyüleyici macerada çocuklar; devasa kambur balinaların okyanusun öbür ucuna kadar ulaşan sihirli şarkılarını, suyu nasıl püskürttüklerini ve kocaman karınlarını minicik deniz canlılarıyla nasıl doyurduklarını heyecanla keşfedecekler.",
+                    Content = @"Denizin iyice sakinleştiği, gökyüzünün masmavi ve bulutsuz olduğu harika bir sabahtı. Yedi yaşındaki Nil, elindeki kocaman, beyaz denizkabuğunu kulağına dayamış, gözlerini kapatarak içinden gelen o derin _“Huuuu…”_ sesini dinliyordu. Nil müziği ve denizi dünyadaki her şeyden çok severdi.
+
+O gün, deniz bilimci olan amcası Ozan ile birlikte ""Mavi Nota"" adındaki büyük bir araştırma gemisindeydiler. Kıyıdan çok uzaklaşmış, okyanusun engin sularına açılmışlardı.
+
+Amcası Ozan, güvertede elinde kalın bir kabloyla Nil’in yanına geldi. ""Denizkabuğunun içindeki ses çok güzeldir Nil,"" dedi gülümseyerek. ""Ama bugün sana okyanusun gerçek şarkıcılarını, dünyanın en büyük korosunu dinleteceğim.""
+
+Nil gözlerini kocaman açtı. ""Okyanusta bir koro mu var? Yani denizkızları mı şarkı söylüyor amca?"" diye sordu heyecanla.
+
+Amcası kahkaha attı. ""Denizkızlarından çok daha büyük, çok daha görkemli şarkıcılar! Hadi, kulaklığını tak bakalım.""
+
+Amcası, elindeki kablonun ucuna bağlı olan ağır, metal bir aleti yavaşça denizin içine doğru sarkıttı. ""Bu aletin adı hidrofon,"" diye açıkladı. ""Yani sualtı mikrofonu. Suyun altındaki en ufak fısıltıyı bile duymamızı sağlar.""
+
+Nil, kocaman kulaklıkları takıp dikkatle dinlemeye başladı. Başta sadece suyun hafif şırıltısı ve minik tıkırtılar duyuluyordu. Her yer çok sessizdi. Nil tam ""Acaba şarkıcılar bugün izinli mi?"" diye düşünecekti ki...
+
+Birden, kulaklıkların içinden inanılmaz bir ses yankılandı!
+
+_“Uuuuuuu… Meeeeee… Oooooo…”_
+
+Bu ses o kadar derin, o kadar güçlü ve yankılıydı ki Nil’in tüyleri diken diken oldu. Sanki devasa bir keman çalınıyor, aynı anda derinden bir flüt sesi geliyordu. Ses bir inip bir çıkıyor, adeta sihirli bir melodi oluşturuyordu.
+
+""Amca! Bu... Bu harika bir ses! Kim söylüyor bu şarkıyı?"" diye fısıldadı Nil, şarkıcıyı ürkütmekten korkarak.
+
+""İşte karşında okyanusun en büyük sanatçıları: Kambur balinalar!"" dedi amcası gururla. ""Şu an kilometrelerce uzaktaki arkadaşlarına, ailelerine şarkı söyleyerek sesleniyorlar. Biliyor musun Nil, bu şarkılar suyun içinde havadan çok daha hızlı ve uzağa gider. Bir balina şarkı söylediğinde, okyanusun öbür ucundaki bir başka balina onu duyabilir.""
+
+**Düşünsene, sen odanda şarkı söylüyorsun ve taa başka bir şehirdeki arkadaşın seni duyabiliyor! Sence de balinaların sesi inanılmaz güçlü değil mi?**
+
+Nil denizin yüzeyine bakarak bu dev şarkıcıları görmeye çalıştı. O sırada geminin biraz ilerisinde suyun yüzeyi kabarmaya, fokurdamaya başladı. Denizin içinden simsiyah, devasa bir karaltı yükseliyordu.
+
+Ve aniden... _Svuuşşş!_
+
+Sanki denizin içinden büyük bir denizaltı çıkıyormuş gibi kocaman, gri-siyah renkli bir kambur balina suyun yüzeyinde belirdi! Nil hayatında bu kadar büyük bir canlı görmemişti. Balina neredeyse büyük bir okul otobüsü kadardı!
+
+Balinanın başının tam üstündeki deliklerden gökyüzüne doğru kocaman, köpüklü bir su fıskiyesi fışkırdı. _Püüüffff!_
+
+**Sence bu kadar kocaman bir canlı, suların altında saatlerce kalıp nefesini nasıl tutuyordur? Balinalar da balık mıdır?**
+
+Hayır, balinalar balık değildir! Onlar tıpkı yunuslar ve bizim gibi memeli canlılardır. Yani suyun altında nefes alamazlar. Taze hava solumak için suyun yüzeyine çıkmak zorundadırlar. Başlarının üstünde bulunan o delikler aslında onların burunlarıdır! Suyu püskürttüklerinde, içlerindeki eski havayı dışarı atarlar ve tertemiz bir nefes çekerler.
+
+Nil, bu nazik devin suya tekrar yavaşça süzülüşünü izledi. ""Amca,"" dedi merakla, ""bu kadar kocaman bir hayvan doyabilmek için kim bilir ne kadar büyük balıklar, devasa köpekbalıkları yiyordur!""
+
+Amcası Ozan başını iki yana sallayarak gülümsedi. ""İnanması çok güç ama, bu devasa balinalar okyanustaki en minicik canlılarla beslenirler! Adlarına 'Krill' denilen, senin serçe parmağın kadar küçük, karidese benzeyen minik canlıları yerler.""
+
+Nil çok şaşırmıştı. Okul otobüsü büyüklüğünde bir hayvan, serçe parmağı kadar küçük bir şeyi yiyerek nasıl doyabilirdi?
+
+""Kambur balinaların ağzında bizimki gibi dişler yoktur,"" diye devam etti amcası. ""Onun yerine 'balina bıyığı' denilen, kocaman, fırçaya benzeyen dişleri vardır. Balina kocaman ağzını açıp tonlarca suyu ve içindeki minik krilleri yutar. Sonra suyu bu fırça gibi bıyıkların arasından dışarı iter. Kriller ağzında kalır ve onları afiyetle midesine indirir. Bir kerede binlercesini yerler!""
+
+Nil, okyanusun bu dev kütüphanesinde ne kadar çok sır saklı olduğunu bir kez daha anladı. Onlar okyanusun kaba devleri değil, minicik şeylerle beslenen, şarkı söyleyen zarif ve bilge canlılarıydı.
+
+Bir süre sonra kambur balina, okyanusun derinliklerine dalmak için hazırlandı. Devasa, kelebek kanadına benzeyen kuyruğunu suyun yüzeyine çıkardı. Nil’e el sallar gibi kuyruğunu havaya kaldırdı ve suları köpürterek maviliklerin içine doğru sessizce kayboldu.
+
+Ama şarkısı hidrofonun kulaklıklarından hâlâ gelmeye devam ediyordu. _“Ooooooo… Meeeeee…”_
+
+Nil, güneş batarken kulaklıkları yavaşça başından çıkardı. Artık denize her baktığında sadece suyu değil, devasa ve görünmez bir konser salonunu görecekti. Çünkü şarkı söyleyen balinalar her zaman orada, derinlerin en güzel ninnilerini söylemeye devam edeceklerdi.
+
+##### Bugün Ne Öğrendik?
+
+- **Balinalar Balık Değildir:** Suyun içinde yaşamalarına rağmen, balinalar tıpkı bizim gibi akciğerleriyle nefes alan memeli hayvanlardır.
+    
+- **Tepedeki Burun (Nefes Deliği):** Nefes almak için su yüzeyine çıkarlar ve başlarının üzerindeki delikten eski havayı suyu püskürterek dışarı atarlar.
+    
+- **Okyanus Korosu:** Özellikle kambur balinalar, birbirleriyle iletişim kurmak, ailelerini bulmak için kilometrelerce öteye ulaşabilen çok güçlü ve melodik şarkılar söylerler.
+    
+- **Devasa Beden, Minik Yemek:** Çok büyük olmalarına rağmen dişleri yoktur. Bunun yerine fırça gibi olan ""balina bıyıklarıyla"" suyu süzerek ""Krill"" adı verilen minicik canlıları yiyerek beslenirler.
+    
+- **Sualtı Mikrofonu:** Suyun altındaki sesleri dinlemek ve kaydetmek için kullanılan özel aletlere ""Hidrofon"" denir.",
                     UnlockCost = 150,
                     IsLocked = true
                 },
                 new List<Question>
                 {
                     new Question{
-                        Text = "Hikâyemize göre Yerebatan Sarnıcı aslında hangi amaçla inşa edilmiştir?",
+                        Text = "Hikâyemize göre balinalar birbirlerine mesaj göndermek ve iletişim kurmak için ne yaparlar?",
                         Options = new List<string>
                         {
-                            "Kralın yazın serin serin uyuması için ",
-                            "Şehrin ve sarayın su ihtiyacını karşılamak için",
-                            "Müzik konserleri vermek için ",
-                            "Şövalyelerin saklanması için"
+                            "Mors alfabesiyle ışık yakarlar",
+                            "Birbirlerine şarkı söylerler",
+                            "Denizin dibindeki kayalara resim çizerler",
+                            "Suyun üstüne zıplarlar"
                         },
-                        CorrectAnswer = "Şehrin ve sarayın su ihtiyacını karşılamak için ",
+                        CorrectAnswer = "Birbirlerine şarkı söylerler",
                         Points = 25
                     },
                     new Question{
-                        Text = "Sarnıcın içindeki suların içinde sessizce yüzen canlılar hangileridir?",
+                        Text = "Kambur balinaların midelerini doyurmak için yedikleri, serçe parmağı büyüklüğündeki minicik canlıların adı nedir?",
                         Options = new List<string>
                         {
-                            "Kurbağalar",
-                            "Su kaplumbağaları",
-                            "Balıklar",
-                            "Ördekler"
+                            "Krill",
+                            "Su piresi",
+                            "Deniz yıldızı",
+                            "Hamsi"
                         },
-                        CorrectAnswer = "Balıklar",
+                        CorrectAnswer = "Krill",
                         Points = 25
                     },
                     new Question{
-                        Text = "Üzerindeki oymalar yüzünden, sarnıcı yaparken yorulan işçiler için üzüldüğüne inanılan sütunun adı nedir?",
+                        Text = "Balinalar nefes almak için vücutlarındaki hangi bölümü kullanırlar?",
                         Options = new List<string>
                         {
-                            "Gülen Sütun",
-                            "Uyuyan Sütun",
-                            "Ağlayan (Gözyaşı) Sütun",
-                            "Saklanan Sütun"
+                            "Kuyruklarındaki solungaçları",
+                            "Karınlarındaki özel bir keseyi",
+                            "Başlarının üstünde bulunan nefes deliğini (burunlarını)",
+                            "Kulaklarını"
                         },
-                        CorrectAnswer = "Ağlayan (Gözyaşı) Sütun",
+                        CorrectAnswer = "Başlarının üstünde bulunan nefes deliğini (burunlarını)",
                         Points = 25
                     },
                     new Question{
-                        Text = "Ali ve teyzesinin sarnıcın köşesinde buldukları, taştan yapılmış ters ve yan duran heykeller kimin başıdır?",
+                        Text = " Nil ve amcası Ozan'ın suyun altındaki balina şarkılarını dinlemek için kullandıkları aletin (sualtı mikrofonu) adı nedir?",
                         Options = new List<string>
                         {
-                            "Yılan saçlı Medusa'nın ",
-                            "Kocaman bir aslanın",
-                            "Uçan bir ejderhanın",
-                            "Eski bir kralın"
+                            "Teleskop",
+                            "Hidrofon",
+                            "Stetoskop",
+                            "Megafon"
                         },
-                        CorrectAnswer = "Yılan saçlı Medusa'nın",
+                        CorrectAnswer = "Hidrofon",
                         Points = 25
                     }
                 }
                 );
-
             #endregion
 
         }
         private static void AddBookIfNotExists(AppDbContext dbContext, Book book, List<Question> questions)
         {
-            if (!dbContext.Books.Any(b=> b.Title == book.Title))
+            if (!dbContext.Books.Any(b => b.Title == book.Title))
             {
-                
+
                 foreach (var question in questions)
                 {
                     question.Book = book;
