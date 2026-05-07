@@ -17,479 +17,447 @@ namespace OkumaUygulamasi.API.Extensions
             #region Kitap Ekleme
 
             AddBookIfNotExists(dbContext,
-                new Book
-                {
-                    Title = "Neşeli Yunuslar, Suların Özgür Dansçıları",
-                    Category = "Denizin Derinlikleri",
-                    Description = @"Rüzgârı saçlarında hisseden küçük Kaan’ın yelkenli bir tekneyle mavi sulara açılıp neşeli yunuslarla tanışmasına eşlik etmeye hazır mısınız? Bu sıcacık hikâyede çocuklar; yunusların nefes alma sırlarını, karanlık sularda yönlerini nasıl bulduklarını ve uyurken neden tek gözlerini açık tuttuklarını macera dolu bir yolla öğrenecekler.",
-                    Content = @"Güneşli, rüzgârın tatlı tatlı estiği bir pazar sabahıydı. Altı yaşındaki Kaan, hayatında ilk defa babasıyla birlikte küçük, beyaz bir yelkenli tekneyle denize açılmıştı. Deniz o kadar maviydi ki, sanki gökyüzü aşağıya inmiş de suya dönüşmüş gibiydi. Martılar teknenin peşinden uçuyor, rüzgâr Kaan'ın yanaklarını hafifçe okşuyordu.
+            new Book
+            {
+                Title = "Parlayan Yıldızlar, Evrenin Işıltılı Fenerleri",
+                Category = "Uzayın Gizemleri",
+                Description = @"Şehrin ışıklarından çok uzakta, sessiz bir orman kampında minik Emre'nin gökyüzündeki pırıl pırıl yıldızların sırlarını keşfetme macerasına katılmaya ne dersiniz? Bu sıcacık hikâyede çocuklar; yıldızların aslında devasa ateş topları olduğunu, en sıcak yıldızların hangi renkte parladığını ve gökyüzündeki şekil bulmaca oyunu olan takımyıldızlarını eğlenerek öğrenecekler.",
+                Content = @"Şehrin gürültüsünden, kalabalığından ve parlak sokak lambalarından çok uzakta, çam ağaçlarıyla dolu bir ormandaydılar. Yedi yaşındaki Emre, ailesiyle birlikte hafta sonu kampına gelmişti. Etrafta sadece cırcır böceklerinin tatlı şarkısı ve hafifçe esen rüzgârın yapraklarda çıkardığı hışırtı vardı.
 
-Kaan teknenin ucuna oturdu, bacaklarını sallandırdı ve heyecanla denizi izlemeye başladı. Suyun altında kimlerin yaşadığını, orada nasıl bir hayat olduğunu çok merak ediyordu.
+Hava tamamen karardığında, Emre çadırından dışarı adım attı. Başını gökyüzüne doğru kaldırdı ve olduğu yerde donup kaldı. Gözlerine inanamıyordu! Gökyüzü, simsiyah kocaman bir kadife örtüye benziyordu ve üzeri binlerce, hatta milyonlarca parlak, gümüş rengi noktayla kaplıydı.
 
-Bir ara, teknenin hemen ilerisinde suyun köpürdüğünü gördü. Sonra birden... _Şlapp!_
+Emre, yanına gelip kamp sandalyesine oturan babasına heyecanla fısıldadı: ""Baba, baksana! Gökyüzüne milyonlarca minik ateşböceği yapışmış gibi! Çok güzeller...""
 
-Sudan gri, parlak ve pürüzsüz bir canlı fırladı! Havada harika bir takla attı ve zarifçe tekrar suya daldı.
+Babası Emre’nin bu şaşkın ve sevimli haline gülümsedi. ""Onlar ateşböceği değil Emre'ciğim, onlar evrenin ışıltılı fenerleri, yani yıldızlar.""
 
-""Baba, bak! Kocaman bir balık uçtu!"" diye bağırdı Kaan gözlerine inanamayarak.
+**Sence gökyüzündeki bu parlayan noktalar, gerçekten bir ateşböceği veya minik birer el feneri kadar küçük olabilir mi?**
 
-Babası yanına geldi ve denize bakıp gülümsedi. ""Çok şanslısın Kaan. Onlar balık değil, suların en neşeli dansçıları olan yunuslar. Bize eşlik etmek, bizimle oyun oynamak istiyorlar.""
+Aslında hiç de küçük değiller! Emre’nin babası anlatmaya başladı: ""Biliyor musun, o küçücük gördüğün yıldızların her biri, dünyamızdan bile milyonlarca kat büyük olan kocaman gaz ve ateş toplarıdır! O kadar büyük ve parlaktırlar ki, çok ama çok uzaklarda, uzayın derinliklerinde olmalarına rağmen ışıkları karanlığı aşıp gözümüze kadar ulaşır. Sadece bizden çok uzakta oldukları için bize minicik görünürler.""
 
-Kaan şaşırmıştı. ""Nasıl yani? Suda yaşıyorlar, yüzgeçleri var ve harika yüzüyorlar ama balık değiller mi?""
+Emre gözlerini kırpıştırdı. Uzaktaki dev ateş topları... Bu gerçekten büyüleyiciydi.
 
-Babası başını salladı. ""Hayır, onlar tıpkı bizim gibi memeli hayvanlardır. Yani suda yaşamalarına rağmen nefes almak için suyun dışına, yani havaya ihtiyaçları vardır.""
+""Peki,"" dedi Emre düşünerek. ""Madem yıldızlar kocaman ateş topları... Neden bizi hiç ısıtmıyorlar? Neden sadece gece çıkıyorlar?""
 
-**Sence yunuslar nefes almak için bizim gibi burunlarını mı kullanırlar?**
+**İşte burada kocaman bir sır var! Peki, sence gökyüzündeki en büyük, gündüzleri her yeri aydınlatan ve bizi sıcacık ısıtan o sarı top aslında nedir?**
 
-Aslında hayır! Yunusların başlarının tam tepesinde sihirli bir kapak gibi çalışan küçük bir delik vardır. Su yüzeyine çıktıklarında bu delikten ""_Püfff!_"" diye güçlü bir şekilde içerideki eski havayı dışarı üfler ve saniyeler içinde tertemiz bir nefes alırlar. Suyun altına dalarken de bu sihirli kapak sımsıkı kapanır ve içlerine bir damla bile su kaçmaz!
+Babası Emre’nin burnuna hafifçe dokunup güldü. ""Gündüzleri gökyüzünde parlayan Güneş var ya? İşte Güneş de aslında bir yıldızdır! Hem de bize en yakın olan yıldız. Bize o kadar yakındır ki, onun sıcaklığını tenimizde hissederiz ve gündüz olduğunda onun güçlü ışığı yüzünden diğer uzak yıldızları göremeyiz. Diğer yıldızlar gece çıkmazlar, onlar hep oradadır. Sadece Güneş saklanıp hava karardığında kendilerini gösterirler.""
 
-Kaan dikkatle izlemeye devam etti. Teknenin yanında şimdi bir değil, tam üç tane yunus yüzüyordu. Sanki birbirleriyle yarışıyor, teknenin oluşturduğu dalgalarda ustaca sörf yapıyorlardı. Kaan onların bu neşeli ve oyuncu haline bayılmıştı.
+Emre Güneş'in de bir yıldız olduğunu öğrenince çok şaşırdı. Gökyüzüne daha dikkatli bakmaya başladı. Bütün yıldızların aynı renkte olmadığını fark etti. Çoğu beyaz veya sarı gibiydi ama bazıları kırmızımsı, bazıları ise mavi mavi parlıyordu.
 
-O sırada yunuslardan incecik, müzik gibi sesler duymaya başladı. _İiii! Cik! Fiyuuuu!_
+**Normalde evimizdeki ocağı yaktığımızda mavi ateş mi daha sıcaktır, yoksa kırmızı ateş mi? Sence mavi renkli bir yıldız mı daha sıcaktır, yoksa kırmızı renkli bir yıldız mı?**
 
-Yunuslar sanki bir şarkı söylüyor ya da birbirlerine bir şeyler anlatıyor gibiydiler.
+""Bak şu mavi parlayan yıldıza,"" dedi babası parmağıyla göstererek. ""Yıldızların rengi, onların ne kadar sıcak olduğunu gösterir. Tıpkı ocaktaki ateşin en sıcak kısmının mavi olması gibi, uzaydaki mavi yıldızlar da en sıcak yıldızlardır! Kırmızı yıldızlar ise mavi olanlara göre daha serindir.""
 
-""Babacığım, yunuslar birbirleriyle mi konuşuyor?"" diye sordu.
+Emre mavi yıldızlara bakarken, gökyüzünün sanki kocaman bir bulmaca tahtası olduğunu düşündü. Yıldızları hayali çizgilerle birbirine birleştirmeye çalıştı.
 
-""Evet,"" dedi babası. ""Biliyor musun, yunusların tıpkı senin ve benim gibi kendilerine ait isimleri vardır. Ama onların isimleri harflerden değil, özel ıslıklardan oluşur. Her yunusun kendine ait farklı ve özel bir ıslığı vardır. Anne yunus yavrusunu çağırmak istediğinde, onun bu özel ıslığını çalarak ona seslenir.""
+Babası, ""Gökyüzündeki o noktaları birleştirme oyununu çok eski zamanlardaki insanlar da oynamış,"" dedi. ""Yıldızları birbirine bağlayıp çeşitli hayvanlara, kahramanlara ve eşyalara benzetmişler. Bunlara 'Takımyıldızı' diyoruz. Mesela şuraya bak... Oradaki yedi yıldızı birleştirince sapı olan kocaman bir cezveye veya kepçeye benziyor, gördün mü? İşte onun adı Büyük Ayı Takımyıldızı.""
 
-Kaan bunu duyunca kendi ismini ıslıkla nasıl çalabileceğini düşündü. Bu gerçekten çok eğlenceli ve zekiceydi! İsimlerini ıslıkla söyleyen sevimli canlılar...
+Emre parmağıyla babasının gösterdiği kepçe şeklindeki yıldızları havada çizdi. Gerçekten de oradaydı! Artık gökyüzü sadece noktalardan ibaret değildi, gizli resimlerle doluydu.
 
-Yunuslar teknenin önünde o kadar hızlı yüzüyorlardı ki, Kaan onların denizin çok derin ve karanlık yerlerinde kayalara çarpmadan nasıl yüzdüklerini merak etti. Gözlerini kıstı ve suyun içine doğru bakmaya çalıştı.
+Tam o sırada, gökyüzünün bir ucundan diğer ucuna ışıldayan incecik bir çizgi çekildi. _Vıııızz!_ Çok hızlı, parlak bir şey kayıp gözden kayboldu.
 
-**Geceleri veya denizin çok derinlerinde her yer kapkaranlıkken, sence yunuslar yollarını nasıl bulurlar? Yanlarında minik bir el feneri taşıyamazlar, değil mi?**
+""Aaa! Baba, yıldız düştü! Bir yıldız yerinden koptu!"" diye bağırdı Emre telaşla.
 
-İşte yunusların muazzam bir süper gücü daha: Sesle görmek! Buna 'ekolokasyon' denir. Yunuslar suyun içinde ""tık tık tık"" diye hızlı ses dalgaları gönderirler. Bu ses dalgaları gidip denizin altındaki bir kayaya veya balığa çarpar ve yankı olarak yunusa geri döner. Böylece yunus, gözleri tamamen kapalı olsa bile önünde ne olduğunu, ne kadar uzakta olduğunu ve hatta ne kadar büyük olduğunu anında anlar. Onlar karanlık suların en usta kâşifleridir!
+**Sence devasa bir ateş topu olan yıldızlar, yerlerinden kopup dünyamıza düşebilir mi?**
 
-Gün yavaş yavaş batmaya başlarken, güneş denizi pırıl pırıl bir turuncuya boyadı. Kaan bütün gün yunusları izlemekten biraz yorulmuş, tatlı tatlı esnemeye başlamıştı. Aklına birden çok ilginç bir soru geldi.
+""Korkma kâşif Emre,"" diye gülümsedi babası. ""Ona 'kayan yıldız' deriz ama aslında o düşen bir yıldız değildir. Uzayda başıboş dolaşan minik kaya parçaları, yani göktaşları, çok hızlı bir şekilde dünyamızın havasına girdiklerinde sürtünmeden dolayı yanarlar ve arkalarında böyle parlak bir ışık bırakırlar. Sanki bir yıldız kayıyormuş gibi görünür.""
 
-""Baba, peki yunuslar hiç uyumaz mı? Su yüzeyine nefes almak için çıkmak zorundalarsa, uyuduklarında bunu nasıl yapıyorlar?""
+Emre derin bir oh çekti. Evrenin sırları ne kadar da eğlenceli ve şaşırtıcıydı. Güneş bir yıldızdı, takımyıldızları gökyüzü bulmacalarıydı, mavi yıldızlar çok sıcaktı ve kayan yıldızlar aslında minik uzay taşlarıydı!
 
-Babası Kaan'ın saçlarını okşadı. ""İşte yunusların en büyük sırrı budur Kaan'cığım. Onlar uyurken beyinlerinin sadece bir yarısı uyur, diğer yarısı ise her zaman uyanık kalır! Üstelik uyurken bir gözleri hep açıktır. Böylece uyanık kalan yarıları, onlara nefes almak için yüzeye çıkmalarını hatırlatır ve onları tehlikelerden korur.""
-
-Kaan hayranlıkla yunuslara baktı. Yarısı uyuyan, yarısı uyanık kalan bir beyin... Gözleri açık uyuyan dansçılar... Denizin altı gerçekten de devasa bir mucizeydi!
-
-Artık eve dönme vakti gelmişti. Yunuslar da bunu anlamış gibi teknenin etrafında son bir kez döndüler. İçlerinden bir tanesi havaya sıçradı, zarif kuyruğunu sallayarak sanki Kaan'a ""Hoşça kal küçük dostumuz!"" dedi ve mavi suların derinliklerine doğru süzülerek gözden kayboldu.
-
-Kaan da onlara el salladı. Kalbi denizin bu muhteşem sırlarıyla sevgiyle çarpıyordu. Yunuslar ona denizin sadece kocaman bir su birikintisi değil, zeki, neşeli ve sevgi dolu canlıların evi olduğunu öğretmişti.,
+Uykusu iyice gelen Emre, son bir kez o devasa ışıklı ormana, milyonlarca yıldıza el salladı. Çadırına girip tulumunun içine kıvrıldığında, kendini o yıldızların arasında, uzayın huzurlu kucağında hissetti. Belki de rüyasında Büyük Ayı ile saklambaç oynayacaktı.
 
 ##### Bugün Ne Öğrendik?
 
-- **Yunuslar Memelidir:** Suda yaşamalarına ve balığa benzemelerine rağmen balık değillerdir, tıpkı bizim gibi akciğerleriyle nefes alan memeli hayvanlardır.
+- **Dev Ateş Topları:** Yıldızlar uzakta oldukları için minicik görünseler de, aslında dünyamızdan milyonlarca kat büyük olan devasa gaz ve ateş toplarıdır.
     
-- **Tepedeki Nefes Deliği:** Nefes almak için burunlarını değil, başlarının en üstünde bulunan sihirli bir kapak gibi açılıp kapanan nefes deliklerini kullanırlar.
+- **En Yakın Yıldız:** Gündüzleri bizi ısıtan ve aydınlatan Güneş, aslında dünyamıza en yakın olan yıldızdır.
     
-- **Islık İsimler:** Her yunusun kendine ait, imza niteliğinde özel bir ıslığı vardır ve birbirlerine bu ıslıklarla, yani isimleriyle seslenirler.
+- **Renkler ve Sıcaklık:** Yıldızların rengi sıcaklıklarını gösterir. Mavi renkte parlayan yıldızlar, kırmızı renkli yıldızlardan çok daha sıcaktır.
     
-- **Sesle Görme (Ekolokasyon):** Karanlık sularda yönlerini bulmak ve avlanmak için etrafa ses dalgaları yayarlar, bu seslerin yankısıyla çevrelerini ""görürler"".
+- **Gökyüzü Bulmacaları (Takımyıldızları):** İnsanların yıldızları hayali çizgilerle birleştirerek hayvanlara veya nesnelere benzettiği şekillere takımyıldızı denir (Örneğin; Büyük Ayı).
     
-- **Yarım Uyku:** Yunuslar uyurken beyinlerinin sadece yarısı uyur ve bir gözleri daima açık kalır. Böylece boğulmazlar ve nefes almak için su yüzeyine çıkabilirler.",
-                    UnlockCost = 0,
-                    IsLocked = false
+- **Kayan Yıldızlar:** Gökyüzünde hızla kayıp giden parlak çizgiler aslında yerinden kopan yıldızlar değil, atmosferimize girip yanan göktaşlarıdır.",
+                UnlockCost = 0,
+                IsLocked = false
+            },
+            new List<Question>
+            {
+                new Question{
+                    Text = "Hikâyemize göre, gündüzleri havayı aydınlattığı için diğer yıldızları görmemizi engelleyen, bize en yakın yıldızın adı nedir?",
+                    Options = new List<string>
+                    {
+                        "Büyük Ayı",
+                        "Mars",
+                        "Güneş",
+                        "Ay"
+                    },
+                    CorrectAnswer = "Güneş",
+                    Points = 25
                 },
-                new List<Question>
-                {
-                    new Question{
-                        Text = "Hikâyemize göre yunuslar nefes almak için vücutlarının neresini kullanırlar?",
-                        Options = new List<string>
-                        {
-                            "Ağızlarını",
-                            "Kuyruklarını",
-                            "Başlarının üstündeki nefes deliğini",
-                            "Gözlerini"
-                        },
-                        CorrectAnswer = "Başlarının üstündeki nefes deliğini",
-                        Points = 25
+                new Question{
+                    Text = "Yıldızların renkleri onların sıcaklığını belli eder. En sıcak olan yıldızlar hangi renkte parlar?",
+                    Options = new List<string>
+                    {
+                        "Mavi",
+                        "Kırmızı",
+                        "Yeşil",
+                        "Pembe"
                     },
-                    new Question{
-                        Text = "Yunuslar birbirlerine seslenmek veya isimlerini söylemek için hangi yöntemi kullanırlar?",
-                        Options = new List<string>
-                        {
-                            "Mektup yazarlar",
-                            "Kendilerine özel ıslıklar çalarlar",
-                            "Kanat çırparlar",
-                            "Davul çalarlar"
-                        },
-                        CorrectAnswer = "Kendilerine özel ıslıklar çalarlar",
-                        Points = 25
+                    CorrectAnswer = "Mavi",
+                    Points = 25
+                },
+                new Question{
+                    Text = "Gökyüzündeki yıldızları hayali çizgilerle birleştirerek oluşturulan, kepçeye veya çeşitli hayvanlara benzeyen gruplara ne ad verilir?",
+                    Options = new List<string>
+                    {
+                        "Uzay Çöpleri",
+                        "Takımyıldızı",
+                        "Gezegen Halkaları",
+                        "Kara Delik"
                     },
-                    new Question{
-                        Text = "Karanlık denizlerde yunusların yollarını kaybetmemesini sağlayan süper güçleri (ekolokasyon) nasıl çalışır?",
-                        Options = new List<string>
-                        {
-                            "Ses dalgaları gönderip yankısını dinleyerek",
-                            "El feneri yakarak",
-                            "Yıldızlara bakarak",
-                            "Diğer balıklara yol sorarak"
-                        },
-                        CorrectAnswer = "Ses dalgaları gönderip yankısını dinleyerek",
-                        Points = 25
+                    CorrectAnswer = "Takımyıldızı",
+                    Points = 25
+                },
+                new Question{
+                    Text = "Kayan yıldız olarak adlandırdığımız, gökyüzünde aniden parlayıp sönen hızlı çizgiler aslında nedir?",
+                    Options = new List<string>
+                    {
+                        "Uzaylıların fenerleri",
+                        "Dünyaya yaklaşan bulutlar",
+                        "Gerçekten yerinden kopan yıldızlar",
+                        "Dünyanın havasına girip yanan minik göktaşları"
                     },
-                    new Question{
-                        Text = "Yunusların uyku düzeni ile ilgili en ilginç özellik aşağıdakilerden hangisidir?",
-                        Options = new List<string>
-                        {
-                            "Sadece kışın uyumaları",
-                            "Uyurken deniz dibindeki kumlara saklanmaları",
-                            "Uyurken beyinlerinin sadece yarısının uyuması ve bir gözlerinin açık kalması",
-                            "Uyurken çok yüksek sesle horlamaları"
-                        },
-                        CorrectAnswer = "Uyurken beyinlerinin sadece yarısının uyuması ve bir gözlerinin açık kalması",
-                        Points = 25
-                    }
+                    CorrectAnswer = "Dünyanın havasına girip yanan minik göktaşları",
+                    Points = 25
                 }
-                );
+            }
+            );
             AddBookIfNotExists(dbContext,
-                new Book
-                {
-                    Title = "Akıllı Ahtapotlar, Derinlerin Gizemli Dahileri",
-                    Category = "Denizin Derinlikleri",
-                    Description = @"Küçük kâşif Deniz'in sarı denizaltısıyla okyanusun derinliklerine dalarak denizlerin en zeki saklambaç ustasıyla tanışmasına hazır mısınız? Bu eğlenceli macerada çocuklar; ahtapotların renk değiştirme sihrini, üç kalpli olmalarının sırrını ve sekiz kollu bu sevimli dahilerin şaşırtıcı zekâsını eğlenerek keşfedecekler.",
-                    Content = @"Güneşli, harika bir gündü. Gökyüzü masmavi, deniz ise çarşaf gibi dümdüzdü. Deniz'in çok sevdiği, camları kocaman, pırıl pırıl sarı renkte minik bir denizaltısı vardı. Adı ""Köpük""tü. Deniz, Köpük ile okyanusun altına dalmayı ve yeni canlılarla tanışmayı her şeyden çok severdi.
+            new Book
+            {
+                Title = "Gümüş Ay, Gecenin Sihirli Lambası",
+                Category = "Uzayın Gizemleri",
+                Description = @"Gece gökyüzünü izlemeyi çok seven minik Duru'nun, kırmızı teleskopuyla Ay'a doğru yaptığı büyüleyici yolculuğa hazır mısınız? Bu sıcacık hikâyede çocuklar; gecemizi aydınlatan gümüş Ay'ın aslında kendi ışığı olmadığını, üzerindeki gizemli çukurların sırrını ve Ay'daki ayak izlerinin neden asla silinmediğini eğlenerek öğrenecekler.",
+                Content = @"Gece olmuş, güneş çoktan uyumaya gitmişti. Gökyüzü koyu mavi, yıldızlı bir battaniye gibi şehrin üzerini örtmüştü. Yedi yaşındaki Duru, yatağına uzanmış, pencereden gökyüzünü izliyordu. Odasının ışığı kapalıydı ama içerisi hiç de karanlık değildi. Pencereden içeri giren gümüş rengi, pırıl pırıl bir ışık tüm odayı aydınlatıyordu.
 
-Bugün Deniz'in gizli bir görevi vardı. Arkadaşı yunuslar ona denizlerin altında yaşayan çok zeki bir canlıdan bahsetmişti. Yunuslar ona, ""Derinlerin Gizemli Dahisi"" diyorlardı. Deniz, bu gizemli dahiyi bulmak için Köpük'ün direksiyonuna geçti ve denizaltının kapağını kapattı.
+Duru yataktan fırladı ve pencereye koştu. Gökyüzünde kocaman, yuvarlak ve parlak bir top duruyordu: Ay!
 
-_Glu glu glu..._ Köpük, yavaşça suyun altına doğru süzülmeye başladı.
+Kendi kendine mırıldandı: ""Acaba Ay'ın içinde kocaman bir ampul mü var? Gökyüzünde asılı duran bu top nasıl bu kadar parlak olabiliyor?""
 
-Suyun altı tıpkı sihirli bir ormana benziyordu. Rengârenk mercanlar, suyun akıntısıyla dans eden yeşil yosunlar ve sürü halinde gezen minik balıklar harika görünüyordu. Deniz, denizaltının farlarını yaktı ve büyük kayalıkların arasına doğru ilerledi. Her yer çok sessizdi.
+**Sence uzayın o karanlık boşluğunda, pille veya elektrikle çalışan dev bir lamba olabilir mi?**
 
-Deniz, üzeri yosun tutmuş, gri ve pütürlü kocaman bir kayaya dikkatle bakıyordu. O sırada inanamayacağı bir şey oldu! Gri kaya birdenbire iki kocaman göz açtı ve Deniz'e bakıp göz kırptı!
+Elbette olamaz! Duru, babasının ona sürpriz olarak aldığı kırmızı teleskopunu hemen pencerenin önüne kurdu. Bir gözünü kapatıp diğerini merceğe dayadı ve Ay'a yakından bakmaya başladı. Biliyor musun, Ay aslında dev ve sihirli bir ayna gibidir! Ay'ın kendi ışığı yoktur. Gündüzleri bizi ısıtan Güneş var ya? İşte o Güneş, gece olduğunda ışıklarını uzaaaaklardan Ay'a gönderir. Ay da o ışıkları yakalayıp dünyamıza, Duru'nun odasına kadar yansıtır. Yani Ay, Güneş'in gece nöbetçisidir!
 
-**Sence hiç kıpırdamadan duran, sıradan gri bir kaya durup dururken birisine göz kırpabilir mi?**
+Duru teleskopuyla bakarken bir şey daha fark etti. Ay bugün kocaman bir tepsi gibi yuvarlak ve dolgundu. Ama geçen hafta gökyüzüne baktığında yarım bir elmaya benziyordu. Daha önceki haftalarda ise incecik, gümüş bir muz gibiydi!
 
-Haklısın, tabii ki kayalar göz kırpmaz! Deniz şaşkınlıkla camdan bakarken, o taş zannettiği şey birdenbire değişmeye başladı. Önce gri rengi açıldı, sonra üzeri minik kırmızı ve turuncu beneklerle doldu. Altından uzun, kıvrımlı kollar çıktı. O bir kaya değildi; inanılmaz bir saklambaç ustası olan bir ahtapottu!
+**Sence Ay neden sürekli şekil değiştiriyor? Acaba gökyüzünde gizli bir uzaylı onu her gece biraz biraz ısırarak yiyor olabilir mi?**
 
-Ahtapot kollarını nazikçe sallayarak Köpük'ün camına yaklaştı. Sanki ""Merhaba, ben de seni bekliyordum!"" diyordu.
+Duru bu fikre kıkırdayarak güldü. Aslında kimse Ay'ı yemiyordu. Ay, dünyamızın etrafında durmadan döner. Tıpkı etrafımızda dönerek saklambaç oynayan bir arkadaşımız gibi! O dünyamızın etrafında dönerken, Güneş'in ışığı onun bazen sadece bir kısmını aydınlatır. Biz de dünyadan baktığımızda Ay'ı bazen incecik bir hilal, bazen yarım, bazen de kocaman yuvarlak bir ""Dolunay"" şeklinde görürüz.
 
-Ahtapotların tam sekiz tane uzun kolu vardır. Deniz, bu kolların altındaki minik, yuvarlak vantuzları, yani yapışkan düğmecikleri fark etti. Ahtapot, bu düğmecikler sayesinde hem kayalara sıkıca tutunabiliyor hem de nesneleri inceleyebiliyordu. Ama daha da ilginci, ahtapotlar kollarındaki bu düğmeciklerle dokundukları her şeyin tadını alabilirler!
+Duru teleskopun ayarını minik parmaklarıyla biraz daha netleştirdi. ""Aaa!"" dedi şaşkınlıkla. Ay'a yakından bakınca yüzeyinin hiç de pürüzsüz olmadığını gördü. Üzerinde kocaman, gri lekeler ve derin çukurlar vardı. ""Sanki delikli, büyük bir peynire benziyor!"" diye düşündü.
 
-**Düşünsene, parmaklarınla en sevdiğin çikolatalı pastaya sadece dokunarak onun ne kadar tatlı olduğunu anladığını! Sence de çok eğlenceli ve sihirli bir özellik değil mi?**
+O kocaman çukurlara ""krater"" deniyordu. Uzayda başıboş dolaşan serseri taşlar, yani göktaşları, milyonlarca yıl boyunca Ay'a çarpmıştı. Çarptıkları yerlerde böyle devasa çukurlar açmışlardı. Duru, o çukurların içinde gizlenen uzay gemileri hayal etti ama orada kimsecikler yoktu. Çok sessiz ve huzurlu bir yerdi.
 
-Deniz bu gizemli canlıyı hayranlıkla izlerken, ahtapot birden oyun oynamak istedi. İki kayanın arasındaki küçücük, incecik bir yarığa doğru yüzdü. Deniz kendi kendine, ""Eyvah! O kadar büyük ki oraya asla sığamaz, kesinlikle sıkışıp kalacak,"" diye düşündü. Ama ahtapot sanki sudan yapılmış gibi akıp o küçücük delikten kolayca geçiverdi.
+Sonra Duru'nun aklına çok ilginç bir bilgi geldi. Çok uzun zaman önce, cesur astronotlar alevler saçan dev roketlerine binip dünyadan ayrılmış ve Ay'a gitmişlerdi. Hatta Ay'ın yüzeyinde yürüyüp o gri toprağa ayak izlerini bırakmışlardı.
 
-Çünkü ahtapotların vücutlarında hiç kemik yoktur! İçlerinde onları sertleştiren bir iskelet bulunmadığı için, gözlerinin sığabildiği minicik deliklerden bile hiç zorlanmadan, kıvrılarak geçebilirler. Yumuşacık vücutları onların en büyük gücüdür.
+**Peki sence, kumsalda yürüdüğümüzde bıraktığımız ayak izlerini dalgaların ve rüzgârın silmesi gibi, astronotların Ay'daki ayak izleri de uçup gitmiş midir?**
 
-Ahtapot deliğin diğer tarafından çıkıp neşeyle tekrar Deniz'in yanına geldi. Bu harika canlının sırları saymakla bitmiyordu. Bizim göğsümüzde ""güm güm"" atan sadece bir tane kalbimiz var, değil mi? Ama bu sualtı dahilerinin tam üç tane kalbi vardır! Evet, yanlış duymadın! Üç kalp, okyanusun derinliklerinde çok daha enerjik ve hızlı yüzmelerini sağlar.
+İşte uzayın en sihirli sırlarından biri daha! Ay'da hava yoktur. Rüzgâr esmez, yağmur yağmaz, fırtına kopmaz. Bu yüzden o cesur astronotların bıraktığı ayak izleri, hiçbir zaman silinmez! Milyonlarca yıl geçse bile tıpkı ilk günkü gibi orada dururlar. Duru teleskopuyla o minicik ayak izlerini göremese de, onların yukarıda bir yerlerde hâlâ durduğunu bilmek içini ısıttı.
 
-**Peki, bizim dizimiz kanadığında kanımızın rengi kırmızı olur. Sence üç kalpli ahtapotların kanı ne renktir? Kırmızı mı, yeşil mi, yoksa mavi mi?**
+Duru kocaman esnedi. Göz kapakları ağırlaşmaya başlamıştı. Ay, tüm sessizliği ve parlaklığıyla yukarıdan ona gülümsüyor gibiydi. O, dünyamızın en yakın arkadaşı, karanlık gecelerin en güzel lambasıydı.
 
-Bunu tahmin etmek biraz zor olabilir. Ahtapotların kanı mavidir! Kanlarında bizimki gibi demir değil, bakır adı verilen bir madde bulunur. Bu da onları tıpkı masallardaki sihirli yaratıklara benzetir.
-
-Derken, denizaltının ışığı kumların üzerinde parlayan bir nesneye takıldı. Bu, deniz dibine düşmüş kapalı bir cam kavanozdu. İçinde ise parlak, incili bir denizkabuğu vardı. Deniz, ahtapotun ne yapacağını merakla izledi. Ahtapot kavanoza yaklaştı. Önce sekiz koluyla kavanozu sıkıca sardı. Sonra kollarını ustaca kullanarak kavanozun kapağını tıpkı bizim gibi çevirmeye başladı. _Tık, tık, tık..._ ve kapak açıldı!
-
-Evet, ahtapotlar kapalı kavanozları açabilecek, labirentleri geçebilecek ve zor bulmacaları çözebilecek kadar akıllıdırlar. İşte yunusların onlara ""Derinlerin Gizemli Dahileri"" demesinin sebebi buydu!
-
-Ahtapot, içindeki parlak denizkabuğunu alıp kollarının arasında sevgiyle tuttu. Sonra Deniz'e dönüp rengini mutluluktan tatlı bir pembeye çevirdi.
-
-Deniz, bu zeki, üç kalpli, mavi kanlı ve şekilden şekle giren arkadaşıyla tanıştığı için dünyanın en şanslı kâşifi gibi hissediyordu. Gitme vakti gelmişti. Denizaltının camından ona el salladı. Ahtapot da sekiz kolundan biriyle Deniz'e veda etti ve suyunu püskürterek hızla uzaklaştı. Birkaç saniye içinde tekrar bir kayanın rengini almış ve saklambaç oyununda görünmez olmuştu.
-
-Deniz, sarı denizaltısı Köpük ile yukarı, Güneş'e doğru çıkarken kıkırdadı. Denizlerin altı gerçekten de devasa bir sihirbazlık sahnesiydi ve ahtapotlar bu sahnenin en büyük yıldızlarıydı.
+Duru kırmızı teleskopunu usulca kapattı. Yatağına girdi, yumuşacık yorganını çenesine kadar çekti. Gümüş Ay'ın tatlı ışığı onu sarıp sarmalarken, rüyasında Ay'ın üzerinde astronot kıyafetiyle hoplaya zıplaya yürüdüğünü göreceğini biliyordu.
 
 ##### Bugün Ne Öğrendik?
 
-- **Sekiz Kol ve Tadım Sihri:** Ahtapotların sekiz tane kolu vardır ve bu kolların üzerindeki minik vantuzlar sayesinde dokundukları şeylerin tadını alabilirler.
+- **Ayna Görevi:** Ay'ın kendi ışığı yoktur. Tıpkı dev bir ayna gibi, Güneş'ten aldığı ışığı yansıtarak gecelerimizi aydınlatır.
     
-- **Kemiksiz Vücut:** Vücutlarında hiç kemik olmadığı için, çok dar ve küçücük yerlerden bile sıvı gibi süzülerek geçebilirler.
+- **Ay'ın Şekilleri (Evreleri):** Ay, dünyamızın etrafında döndüğü için Güneş ışığını her zaman aynı açıdan almaz. Bu yüzden onu bazen hilal (muz şekli), bazen de dolunay (tam yuvarlak) olarak görürüz.
     
-- **Renkli Kamuflaj:** Ahtapotlar tehlikelerden saklanmak veya avlanmak için renklerini ve derilerinin şeklini saniyeler içinde değiştirerek bulundukları yere uyum sağlarlar.
+- **Peynir Gibi Çukurlar:** Ay'ın yüzeyi pürüzsüz değildir. Uzaydaki göktaşlarının çarpması sonucu oluşan ve ""Krater"" adı verilen dev çukurlarla doludur.
     
-- **Üç Kalp ve Mavi Kan:** İnanması güç olsa da ahtapotların tam üç tane kalbi vardır ve kanlarının rengi mavidir!
-    
-- **Derinlerin Dahileri:** Ahtapotlar okyanusun en zeki canlılarından biridir; kapalı kavanozların kapaklarını çevirip açabilir, bulmacaları çözebilirler.",
-                    UnlockCost = 50,
-                    IsLocked = true
+- **Silinmeyen İzler:** Ay'da hava, rüzgâr veya yağmur yoktur. Bu nedenle Ay'a giden astronotların toprakta bıraktığı ayak izleri asla bozulmaz ve sonsuza kadar kalır.",
+                UnlockCost = 50,
+                IsLocked = true
+            },
+            new List<Question>
+            {
+                new Question{
+                    Text = "Hikâyemize göre Ay gece gökyüzünde nasıl bu kadar parlak görünebiliyor?",
+                    Options = new List<string>
+                    {
+                        "İçinde dev bir ampul olduğu için",
+                        "Güneş'ten aldığı ışığı ayna gibi yansıttığı için",
+                        "Üzerinde ateş yandığı için",
+                        "Ateşböcekleri Ay'ı kapladığı için"
+                    },
+                    CorrectAnswer = "Güneş'ten aldığı ışığı ayna gibi yansıttığı için",
+                    Points = 25
                 },
-                new List<Question>
-                {
-                    new Question{
-                        Text = "Hikâyemize göre ahtapotlar kollarının altındaki minik yapışkan düğmeler (vantuzlar) sayesinde ne yapabilirler?",
-                        Options = new List<string>
-                        {
-                            "Çok hızlı koşabilirler",
-                            "Dokundukları şeylerin tadını alabilirler",
-                            "Şarkı söyleyebilirler",
-                            "Ateş yakabilirler"
-                        },
-                        CorrectAnswer = "Dokundukları şeylerin tadını alabilirler",
-                        Points = 25
+                new Question{
+                    Text = "Ay'ın şeklinin bazen incecik bir muz (hilal), bazen de kocaman bir tepsi (dolunay) gibi görünmesinin sebebi nedir?",
+                    Options = new List<string>
+                    {
+                        "Uzaylıların onu ısırması",
+                        "Ay'ın rüzgârda küçülüp büyümesi",
+                        "Ay'ın dünyamızın etrafında dönmesi ve Güneş ışığının farklı yerlerine vurması",
+                        "Bulutların onu sıkıştırması"
                     },
-                    new Question{
-                        Text = "Ahtapotlar neden küçücük ve dar deliklerden bile kolayca sıkışmadan geçebilirler?",
-                        Options = new List<string>
-                        {
-                            "Çünkü vücutlarında hiç kemik yoktur",
-                            "Çünkü çok hızlıdırlar",
-                            "Çünkü özel bir sabun kullanırlar",
-                            "Çünkü görünmez olma güçleri vardır"
-                        },
-                        CorrectAnswer = "Çünkü vücutlarında hiç kemik yoktur",
-                        Points = 25
+                    CorrectAnswer = "Ay'ın dünyamızın etrafında dönmesi ve Güneş ışığının farklı yerlerine vurması",
+                    Points = 25
+                },
+                new Question{
+                    Text = "Ay'ın yüzeyinde bulunan, göktaşlarının çarpmasıyla oluşmuş derin çukurlara ne ad verilir?",
+                    Options = new List<string>
+                    {
+                        "Krater",
+                        "Kanyon",
+                        "Havuz",
+                        "Mağara"
                     },
-                    new Question{
-                        Text = "Ahtapotların vücudunda hayat suyu pompalayan kaç tane kalp bulunur?",
-                        Options = new List<string>
-                        {
-                            "1",
-                            "2",
-                            "3",
-                            "4"
-                        },
-                        CorrectAnswer = "3",
-                        Points = 25
+                    CorrectAnswer = "Krater",
+                    Points = 25
+                },
+                new Question{
+                    Text = "Cesur astronotların Ay yüzeyinde bıraktıkları ayak izleri neden aradan çok uzun yıllar geçse de silinmez?",
+                    Options = new List<string>
+                    {
+                        "Ayak izlerinin üzerini camla kapattıkları için",
+                        "Ay'da rüzgâr, yağmur ve hava olmadığı için",
+                        "Uzaylılar her gün ayak izlerini temizlediği için",
+                        "Ayak izlerini boyadıkları için"
                     },
-                    new Question{
-                        Text = "Deniz'in okyanusta gördüğü ahtapot, kumların üzerindeki kapalı cam kavanozu bulunca zekâsını kullanarak ne yaptı?",
-                        Options = new List<string>
-                        {
-                            "Kavanozu alıp denizin dibine gömdü",
-                            "Kollarıyla kavanozun kapağını çevirerek açtı",
-                            "Kavanozun üstüne oturup uyudu",
-                            "Kavanozu Deniz'e fırlattı"
-                        },
-                        CorrectAnswer = "Kollarıyla kavanozun kapağını çevirerek açtı",
-                        Points = 25
-                    }
+                    CorrectAnswer = "Ay'da rüzgâr, yağmur ve hava olmadığı için",
+                    Points = 25
                 }
-                );
+            }
+            );
             AddBookIfNotExists(dbContext,
-                new Book
-                {
-                    Title = "Sevimli Denizatları, Mercanların Minik Bekçileri",
-                    Category = "Denizin Derinlikleri",
-                    Description = @"Meraklı kâşif Ada’nın sihirli şnorkeliyle rengârenk mercan ormanlarına dalarak denizlerin en gizemli ve narin canlısıyla tanışmasına katılmaya ne dersiniz? Bu heyecan verici hikâyede çocuklar; babalarının karnında büyüyen yavruları, fırtınada akıntıya kapılmamak için mercanlara sarılan kıvrık kuyrukları ve dik yüzen denizatlarının sihirli dünyasını eğlenerek keşfedecekler.",
-                    Content = @"Gözlerini kapat ve kendini masmavi, ılık bir denizin kıyısında hayal et. Su o kadar berrak ki, güneş ışıkları denizin dibindeki altın sarısı kumların üzerinde dans ediyor. Sekiz yaşındaki Ada, denizi çok seven, saçları rüzgârda dalgalanan neşeli ve minik bir kâşifti. Ada'nın en büyük hayali, okyanusun derinliklerindeki gizli dünyaları görmekti.
+            new Book
+            {
+                Title = "Komşu Gezegenler, Güneş'in Renkli Dansçıları",
+                Category = "Uzayın Gizemleri",
+                Description = @"Gökyüzüne bakmayı çok seven hayalperest Lina’nın odasında bulduğu sihirli bir müzik kutusuyla Güneş Sistemi'ne yaptığı büyüleyici yolculuğa hazır mısınız? Bu renkli macerada çocuklar; Güneş'in etrafında dönen komşu gezegenlerin muhteşem dansını, Satürn'ün buzdan halkalarını ve Mars'ın neden kıpkırmızı göründüğünü eğlenerek keşfedecekler.",
+                Content = @"Dışarıda yağmurun usulca cama vurduğu, serin bir pazar günüydü. Sekiz yaşındaki Lina, odasında yere uzanmış, uzayla ilgili en sevdiği resimli kitabın sayfalarını çeviriyordu. O sırada yatağının altında, daha önce hiç fark etmediği küçük, ahşap bir kutu gördü. Üzerinde altın rengi yıldız işlemeleri olan, eski ve gizemli bir müzik kutusuydu bu.
 
-Bir sabah, en sevdiği pembe şnorkelini ve deniz gözlüğünü taktı. Suya usulca, ""_Cumburlop!_"" diye atladı.
+Lina merakla kutuyu eline aldı ve kenarındaki küçük kolu yavaşça çevirmeye başladı. _Tık, tık, tık..._
 
-Suyun altı bambaşka bir gezegen gibiydi! Mor, sarı ve kırmızı renklerde kocaman mercanlar tıpkı çiçek açmış ağaçlara benziyordu. Minik, gümüş renkli balıklar sürü halinde bir sağa bir sola hızla yüzüyordu. Ada, ellerini ve ayaklarını çırparak bu mercan ormanının içine doğru süzüldü.
+Kutu aniden açıldı ve içinden pırıl pırıl, rengârenk ışıklar odaya yayıldı! Tatlı, huzur veren bir melodi çalmaya başladı. Odanın tavanı bir anda karanlık uzaya dönüştü ve Lina'nın etrafında, havada süzülen parlayan küreler belirdi. Lina sihirli bir uzay haritasının tam ortasındaydı!
 
-Büyük, yeşil yosunlarla kaplı bir mercanın yanından geçerken aniden durdu. Gözlerine inanamıyordu! Yeşil yosunun bir parçası sanki yavaşça kımıldamıştı. Ada biraz daha yaklaştı. Yosun sandığı o incecik şeyin üzerinde fıldır fıldır dönen iki tane minik, siyah göz vardı!
+Sahnenin en ortasında, kocaman, sıcacık ve ışıl ışıl parlayan dev bir ateş topu vardı.
 
-**Sence sıradan bir yosunun etrafa merakla bakan boncuk gibi gözleri olabilir mi?**
+""Merhaba Güneş!"" diye fısıldadı Lina gülümseyerek. Odanın içi bile hafifçe ısınmıştı. Güneş o kadar büyüktü ki, etrafındaki diğer küreler onun yanında minicik misketler gibi kalıyordu. Bütün bu misketler, yani gezegenler, kendi etraflarında dönerek Güneş'in çevresinde harika bir çember çiziyorlardı. Adeta Güneş'in etrafında dans ediyorlardı.
 
-Elbette olamaz! Ada, karşısında duran bu gizemli canlıyı dikkatle inceledi. Başı tıpkı minyatür bir ata benziyordu! Ağzı ise ince uzun bir pipet gibiydi. Ama en ilginci, vücudunun alt kısmıydı. Kuyruğu tıpkı ağaç dallarına tutunan sevimli bir maymunun kuyruğu gibi içe doğru kıvrıktı.
+**Sence bütün bu gezegenler uzayda neden dağılıp gitmiyor da hep Güneş'in etrafında, hiç yorulmadan dönüyor olabilirler?**
 
-Ada kalbinin hızla çarptığını hissetti. O, efsanelerde duyduğu ama daha önce hiç görmediği bir canlıyı bulmuştu: Bir denizatı!
+Bunun sebebi Güneş'in görünmez kucaklaması, yani yerçekimidir! Güneş o kadar büyüktür ki, yerçekimi gücüyle bütün komşu gezegenleri kendine çeker ve onların kaybolmasını engeller.
 
-Bu minik canlı o kadar küçüktü ki, neredeyse Ada'nın eli kadardı. Üstelik yeşil yosunların arasında o kadar iyi saklanmıştı ki, rengini tıpkı yosunlar gibi yeşile çevirmişti. Denizatları tıpkı birer bukalemun gibi saklanmak istediklerinde renk değiştirebilirlerdi. Bu yüzden onlar mercanların minik, görünmez bekçileriydi.
+Lina dans eden gezegenleri yakından incelemeye başladı. Güneş'e en yakın olan, aynı zamanda en minik olan gri bir gezegendi. O kadar hızlı koşuyordu ki, Lina onu gözleriyle zor takip ediyordu.
 
-Ada denizatının nasıl yüzeceğini çok merak etti. Onu izlemek için olduğu yerde sessizce bekledi.
+""Sen Merkür olmalısın!"" dedi Lina. Merkür, Güneş'e çok yakın olduğu için onun etrafındaki turunu herkesten hızlı bitiren, şampiyon bir koşucuydu. Ancak Güneş'e çok yakın olduğu için gündüzleri fırın gibi sıcak, geceleri ise buz gibi soğuk olurdu.
 
-**Düşünsene, balıklar denizde ok gibi yatay bir şekilde, dümdüz yüzerler. Sence denizatları da onlar gibi mi yüzer?**
+Merkür'ün hemen arkasında, pırıl pırıl parlayan sarımsı bir gezegen daha süzülüyordu. Bu Venüs'tü! Venüs o kadar parlaktı ki, gökyüzünde yıldızlara benzerdi. Ama üzeri kalın, battaniye gibi bulutlarla kaplıydı ve bu yüzden içerisi Güneş Sistemi'nin en sıcak yeriydi. Lina ona dokunmaya çalıştı ama Venüs sıcak ve kalın bulutlarıyla nazlı nazlı dönerek uzaklaştı.
 
-Hayır! Denizatları diğer balıklar gibi yüzmezler. O, denizin içinde dimdik, tıpkı ayakta duran bir insan gibi yüzmeye başladı. Sırtındaki küçücük, şeffaf yüzgeci o kadar hızlı ""pır pır"" ediyordu ki, Ada bu yüzgeci bir helikopter pervanesine benzetti. Boynundaki minik yüzgeçler de ona yön veriyordu. Ama çok yavaş yüzüyordu.
+Sonra Lina'nın gözü, dans eden gezegenler arasında en güzel, en tanıdık olana takıldı. Mavi denizleri, yeşil ormanları ve beyaz bulutlarıyla bir inci gibi parlıyordu.
 
-Tam o sırada, denizin dibinde hafif bir akıntı başladı. Su, Ada'nın saçlarını geriye doğru dalgalandırdı. Denizatları çok iyi yüzücüler olmadıkları için bu akıntı onu uzaklara sürükleyebilirdi.
+""Burası bizim evimiz, Dünya!"" diyerek sevinçle zıpladı Lina. Dansçılar arasında üzerinde su, ağaçlar ve canlılar olan tek eşsiz gezegen Dünya'ydı. Lina kendi evini uzaydan izlemenin ne kadar harika bir duygu olduğunu düşündü.
 
-**Peki, suyun altında güçlü bir akıntı geldiğinde, bu minik ve narin canlı sürüklenmemek için sence ne yapmıştır?**
+Dünya'nın hemen peşinden, pas renginde, turuncu ve kırmızı karışımı küçük bir gezegen geliyordu.
 
-Ada hayranlıkla izledi. Denizatı hiç panik yapmadı. O kıvrık, maymun kuyruğuna benzeyen kuyruğunu hemen yanındaki sağlam bir mercan dalına sıkıca doladı! Tıpkı bizim rüzgârlı bir havada bir direğe sarılıp tutunmamız gibi... Artık güvendeydi. Su onu ne kadar iterse itsin, kuyruğu sayesinde mercandan ayrılmıyordu.
+**Sence uzayın ortasında duran Mars, neden paslı bir demir gibi kıpkırmızı görünüyordur? Acaba birisi onu kırmızıya mı boyadı?**
 
-Denizatı mercana tutunurken bir yandan da karnını doyurmaya karar verdi. Etraftan geçen minicik su piresi gibi canlılara doğru uzun ağzını uzattı ve ""_Hüüp!_"" diye onları tıpkı bir elektrik süpürgesi gibi içine çekti. Biliyor musun, denizatlarının dişleri ve bizimki gibi yiyecekleri biriktiren bir mideleri yoktur. Yediklerini hemen sindirirler, bu yüzden sürekli, ama sürekli yemek yemek zorundadırlar.
+Elbette hayır! Mars'ın kırmızı görünmesinin sebebi, toprağında bulunan çok fazla miktardaki demir tozudur. Tıpkı yağmurda unutulmuş eski bir bisikletin paslanıp kızarması gibi, Mars'ın yüzeyi de demir yüzünden kırmızıya dönmüştür. Bu yüzden ona ""Kızıl Gezegen"" derler. Üstelik Mars'ın üzerinde, güneş sistemindeki en yüksek yanardağlar bulunur!
 
-Ada bu minik dostunu izlerken biraz ileride başka bir denizatı daha gördü. Ama bu denizatı diğerinden biraz farklıydı. Karnı kocaman, şişkinceydi! Sanki içine bir pinpon topu saklamış gibi görünüyordu.
+Lina müzik kutusunun melodisine kapılmışken, sahneye aniden dev gibi bir gezegen girdi. Bu, üzerinde sarı, turuncu ve kahverengi çizgiler olan Jüpiter'di. Bütün gezegenlerin en büyüğü, en ağabeyiydi! O kadar kocaman ve ağırdı ki, dönerken hafifçe uğulduyordu. Lina, Jüpiter'in üzerinde devasa, kırmızı bir leke gördü. Bu leke, yüzlerce yıldır devam eden kocaman bir rüzgâr fırtınasıydı.
 
-**Doğada yavrularını karnında taşıyanlar genellikle annelerdir. Sence bu şişman karınlı denizatı anne miydi?**
+Hemen arkasından ise Güneş Sistemi'nin en süslü dansçısı süzülerek geldi: Satürn! Satürn'ün belinde, pırıl pırıl parlayan kocaman bir hulahop vardı.
 
-İşte denizatlarının en büyük ve en sihirli sırrı buradaydı! Ada, sualtı belgesellerinde izlediği bir bilgiyi hatırladı: Denizatlarında yavruları anneler değil, babalar taşırdı! Evet, bu şişman karınlı olan bir baba denizatıydı. Babaların karnında tıpkı kangurularınki gibi güvenli bir kese bulunur. Anne denizatı yumurtaları bu keseye bırakır ve baba onları yavrular büyüyene kadar kendi karnında taşır.
+**Peki, Satürn'ün etrafındaki bu muhteşem parlayan halkalar sence neyden yapılmış olabilir? Uzaylıların fırlattığı altın tozlardan mı?**
 
-Ada heyecanla nefesini tuttu, çünkü inanılmaz bir şeye şahit oluyordu. Baba denizatının karnı yavaşça kasıldı ve kesesinin içinden iğne ucu kadar küçük, şeffaf, minicik denizatları teker teker suya fırlamaya başladı! _Pıt... Pıt... Pıt..._
+Hayır, çok daha ilginci! Satürn'ün o eşsiz halkaları, uzayda savrulan irili ufaklı buz parçalarından ve taşlardan oluşur! Bu buz parçaları Güneş'in ışığını ayna gibi yansıttığı için uzaktan bakıldığında pırıl pırıl bir yüzük gibi görünür.
 
-Onlarca minik yavru denizatı, babalarının karnından çıkıp anında dik bir şekilde yüzmeye ve kuyruklarıyla etraftaki minik yosunlara tutunmaya başladılar. Tıpkı babalarının kopyası gibiydiler ama çok daha küçüktüler.
+Dansın en arkasında ise, mavimsi renkleriyle birbirine çok benzeyen iki buzlu kardeş sessizce dönüyordu: Uranüs ve Neptün. Onlar Güneş'e o kadar uzaktılar ki, oralar her zaman çok soğuk, çok karanlık ve fırtınalıydı. Onlar grubun en ağırbaşlı dansçılarıydı.
 
-Ada, bu sihirli anı hayatı boyunca hiç unutmayacağını biliyordu. Mercanların bu narin, zeki ve çalışkan bekçilerine usulca el salladı. Yavru denizatları da minik yüzgeçlerini çırparak sanki ona karşılık verdiler. Ada, içi sevgi ve mutlulukla dolarak güneşin parladığı su yüzeyine doğru yüzmeye başladı. Denizin derinlikleri, beklediğinden çok daha muhteşem sürprizlerle doluydu.
+Müzik kutusunun melodisi yavaş yavaş yavaşladı... Işıklar usulca sönmeye, gezegenler renkli birer sis bulutuna dönüşüp kaybolmaya başladı. Sonunda odaya tekrar yağmurun o tatlı sesi doldu.
+
+Lina sihirli ahşap kutuyu nazikçe kapattı. Artık gökyüzüne her baktığında sadece parlayan beyaz noktalar görmeyecekti. O noktaların her birinin ayrı bir rengi, ayrı bir hikâyesi ve Güneş'in etrafında hiç bitmeyen harika bir dansı olduğunu biliyordu. Kendi etrafında kollarını açarak bir kez döndü, Dünya gibi... Gezegenlerin dansı, artık onun da kalbinde dönmeye devam edecekti.
 
 ##### Bugün Ne Öğrendik?
 
-- **Dik Yüzen Canlılar:** Denizatları diğer balıklar gibi yatay değil, suyun içinde dimdik (ayakta duruyormuş gibi) yüzerler.
+- **Merkezdeki Güç:** Güneş, gezegenlerin etrafında döndüğü devasa bir yıldızdır ve yerçekimi sayesinde bütün gezegenleri bir arada tutar.
     
-- **Baba Kangurular:** Dünyada yavrularını karnında taşıyıp doğuran tek erkek canlı, baba denizatlarıdır. Babaların karnında yavruları büyüttükleri özel bir kese bulunur.
+- **Hızlı ve Sıcak:** Merkür Güneş'e en yakın ve etrafında en hızlı dönen gezegendir. Venüs ise kalın bulutları yüzünden sistemin en sıcak gezegenidir.
     
-- **Kıvrık Kuyruk:** Denizatlarının maymun kuyruğuna benzeyen, bir şeyleri kavrayabilen güçlü kuyrukları vardır. Bu sayede akıntıda sürüklenmemek için mercanlara ve yosunlara sıkıca tutunurlar.
+- **Kızıl Gezegen:** Mars'ın toprağında çok fazla demir bulunduğu için uzaydan bakıldığında paslı, kırmızımsı bir renkte görünür.
     
-- **Dişsiz ve Midesiz:** Ağızları uzun bir pipete benzer. Dişleri ve mideleri olmadığı için avlarını elektrik süpürgesi gibi içlerine çekerler ve doymak için sürekli yemek zorundadırlar.
+- **Gezegenlerin Kralı:** Jüpiter, Güneş Sistemi'ndeki en büyük gezegendir ve üzerinde çok uzun zamandır devam eden devasa kırmızı bir fırtına lekesi bulunur.
     
-- **Bukalemun Gibi:** Tehlikelerden korunmak ve saklanmak için tıpkı bukalemunlar gibi renk değiştirebilirler.",
-                    UnlockCost = 100,
-                    IsLocked = true
+- **Buzdan Halkalar:** Satürn, etrafında pırıl pırıl parlayan buz ve taş parçalarından oluşmuş muhteşem halkalara (yüzüklere) sahiptir.",
+                UnlockCost = 100,
+                IsLocked = true
+            },
+            new List<Question>
+            {
+                new Question{
+                    Text = "Hikâyemize göre gezegenlerin uzayda kaybolmadan Güneş'in etrafında dönebilmelerini sağlayan görünmez güç nedir?",
+                    Options = new List<string>
+                    {
+                        "Rüzgâr gücü",
+                        "Uzaylıların ipleri",
+                        "Yerçekimi (Güneş'in kucaklaması)",
+                        "Mıknatıs tozu"
+                    },
+                    CorrectAnswer = "Yerçekimi (Güneş'in kucaklaması)",
+                    Points = 25
                 },
-                new List<Question>
-                {
-                    new Question{
-                        Text = "Hikâyemize göre denizatları suyun içinde nasıl yüzerler?",
-                        Options = new List<string>
-                        {
-                            "Sırtüstü yatarak",
-                            "Diğer balıklar gibi ok gibi yatay bir şekilde",
-                            "Dimdik, ayakta duruyormuş gibi",
-                            "Kendi etrafında taklalar atarak"
-                        },
-                        CorrectAnswer = "Dimdik, ayakta duruyormuş gibi",
-                        Points = 25
+                new Question{
+                    Text = "Dünyamızın komşusu olan Mars gezegenine renginden dolayı hangi isim verilmiştir?",
+                    Options = new List<string>
+                    {
+                        "Mavi Okyanus",
+                        "Kızıl Gezegen",
+                        "Yeşil Orman",
+                        "Sarı Top"
                     },
-                    new Question{
-                        Text = " Suyun altında güçlü bir akıntı geldiğinde denizatları sürüklenmemek için ne yaparlar?",
-                        Options = new List<string>
-                        {
-                            "Kumların altına saklanırlar",
-                            "Maymun gibi kıvrık kuyruklarıyla mercanlara veya yosunlara tutunurlar",
-                            "Çok hızlı yüzerek kaçarlar",
-                            "Su yüzeyine çıkıp beklerler"
-                        },
-                        CorrectAnswer = "Maymun gibi kıvrık kuyruklarıyla mercanlara veya yosunlara tutunurlar",
-                        Points = 25
+                    CorrectAnswer = "Kızıl Gezegen",
+                    Points = 25
+                },
+                new Question{
+                    Text = "Güneş Sistemi'ndeki en kocaman, diğer bütün gezegenlerin ağabeyi sayılan gezegen hangisidir?",
+                    Options = new List<string>
+                    {
+                        "Merkür",
+                        "Venüs",
+                        "Dünya",
+                        "Jüpiter"
                     },
-                    new Question{
-                        Text = "Denizatları yemeklerini nasıl yerler?",
-                        Options = new List<string>
-                        {
-                            "Keskin dişleriyle ısırarak",
-                            "Yemeklerini elleriyle tutarak",
-                            "Pipete benzeyen ağızlarıyla içlerine hüpleterek (çekerek)",
-                            "Yemeklerini taşlarla kırarak"
-                        },
-                        CorrectAnswer = "Pipete benzeyen ağızlarıyla içlerine hüpleterek (çekerek)",
-                        Points = 25
+                    CorrectAnswer = "Jüpiter",
+                    Points = 25
+                },
+                new Question{
+                    Text = "Güneş'in etrafında dönerken belinde buz ve taşlardan oluşan pırıl pırıl bir hulahop (halka) taşıyan süslü gezegen hangisidir?",
+                    Options = new List<string>
+                    {
+                        "Satürn",
+                        "Uranüs",
+                        "Neptün",
+                        "Merkür"
                     },
-                    new Question{
-                        Text = "Denizatlarının doğadaki diğer birçok canlıdan ayrılan, yavru bakımıyla ilgili en ilginç özelliği nedir?",
-                        Options = new List<string>
-                        {
-                            "Yavrularına şarkı söylemeleri",
-                            "Yavruları annelerin değil, babaların kendi karnındaki kesede taşıması",
-                            "Yavrularını deniz kabuklarının içine saklamaları",
-                            "Yavrularını sadece geceleri beslemeleri"
-                        },
-                        CorrectAnswer = "Yavruları annelerin değil, babaların kendi karnındaki kesede taşıması",
-                        Points = 25
-                    }
+                    CorrectAnswer = "Satürn",
+                    Points = 25
                 }
-                );
+            }
+            );
             AddBookIfNotExists(dbContext,
-                new Book
-                {
-                    Title = "Şarkı Söyleyen Balinalar, Okyanusun Dev Korosu",
-                    Category = "Denizin Derinlikleri",
-                    Description = @"Küçük kâşif Nil ve deniz bilimci amcasıyla birlikte uçsuz bucaksız okyanusta dünyanın en büyük müzik festivaline katılmaya ne dersiniz? Bu büyüleyici macerada çocuklar; devasa kambur balinaların okyanusun öbür ucuna kadar ulaşan sihirli şarkılarını, suyu nasıl püskürttüklerini ve kocaman karınlarını minicik deniz canlılarıyla nasıl doyurduklarını heyecanla keşfedecekler.",
-                    Content = @"Denizin iyice sakinleştiği, gökyüzünün masmavi ve bulutsuz olduğu harika bir sabahtı. Yedi yaşındaki Nil, elindeki kocaman, beyaz denizkabuğunu kulağına dayamış, gözlerini kapatarak içinden gelen o derin _“Huuuu…”_ sesini dinliyordu. Nil müziği ve denizi dünyadaki her şeyden çok severdi.
+            new Book
+            {
+                Title = "Hızlı Roketler, Yıldızlara Uçan Gezginler",
+                Category = "Uzayın Gizemleri",
+                Description = @"Karton kutulardan kendi uzay gemisini yapan minik Mert’in uçsuz bucaksız yıldızlara doğru kurduğu bu heyecan verici hayale katılmaya ne dersiniz? Bu eğlenceli hikâyede çocuklar; dev roketlerin dünyanın görünmez çekim gücünden nasıl kurtulduğunu, uzaya çıkarken neden parçalara ayrıldıklarını ve cesur astronotların roketin neresinde yolculuk ettiğini keşfedecekler.",
+                Content = @"Güneşli bir hafta sonu sabahıydı. Yedi yaşındaki Mert, odasının ortasına kocaman karton kutular dizmişti. Ellerinde yapıştırıcı, renkli bantlar ve alüminyum folyolar vardı. Mert uzayı, yıldızları ve gizemli gezegenleri çok severdi. En büyük hayali bir gün astronot kıyafetini giyip gökyüzünün en tepesine, hatta bulutların bile ötesine uçmaktı.
 
-O gün, deniz bilimci olan amcası Ozan ile birlikte ""Mavi Nota"" adındaki büyük bir araştırma gemisindeydiler. Kıyıdan çok uzaklaşmış, okyanusun engin sularına açılmışlardı.
+Karton kutuları dikkatlice üst üste koydu, en tepesine huni şeklinde bir şapka yaptı ve etrafını parlak gümüş folyoyla kapladı. İşte karşısında kendi yaptığı devasa uzay roketi duruyordu! Adını ""Yıldız Tozu"" koydu.
 
-Amcası Ozan, güvertede elinde kalın bir kabloyla Nil’in yanına geldi. ""Denizkabuğunun içindeki ses çok güzeldir Nil,"" dedi gülümseyerek. ""Ama bugün sana okyanusun gerçek şarkıcılarını, dünyanın en büyük korosunu dinleteceğim.""
+Mert büyük bir heyecanla roketinin içine girdi. Önüne çizdiği renkli düğmelere basıyormuş gibi yaptı. ""Üç, iki, bir... Ateşle!"" diye bağırdı. Ama Yıldız Tozu olduğu yerde duruyordu.
 
-Nil gözlerini kocaman açtı. ""Okyanusta bir koro mu var? Yani denizkızları mı şarkı söylüyor amca?"" diye sordu heyecanla.
+O sırada odanın kapısı aralandı. Mert’in uzay bilimlerine çok meraklı olan ablası Zeynep içeri girdi. Mert’in harika roketini görünce kocaman gülümsedi. ""Yıldız Tozu uçuşa hazır görünüyor Kaptan Mert!"" dedi. ""Peki gerçek roketlerin gökyüzüne nasıl fırladığını, o uzun yolculuğa nasıl çıktıklarını biliyor musun?""
 
-Amcası kahkaha attı. ""Denizkızlarından çok daha büyük, çok daha görkemli şarkıcılar! Hadi, kulaklığını tak bakalım.""
+Mert merakla başını salladı. ""Sanırım altlarından kocaman alevler çıkıyor ve _Vuuuuuşş!_ diye hızla uçuyorlar.""
 
-Amcası, elindeki kablonun ucuna bağlı olan ağır, metal bir aleti yavaşça denizin içine doğru sarkıttı. ""Bu aletin adı hidrofon,"" diye açıkladı. ""Yani sualtı mikrofonu. Suyun altındaki en ufak fısıltıyı bile duymamızı sağlar.""
+""Çok doğru,"" dedi ablası yatağın kenarına oturarak. ""Peki sence roketlerin bu kadar büyük bir ateşe ve güce neden ihtiyacı vardır? Biz havaya zıpladığımızda gökyüzüne uçup gitmiyoruz, hemen geri yere düşüyoruz değil mi?""
 
-Nil, kocaman kulaklıkları takıp dikkatle dinlemeye başladı. Başta sadece suyun hafif şırıltısı ve minik tıkırtılar duyuluyordu. Her yer çok sessizdi. Nil tam ""Acaba şarkıcılar bugün izinli mi?"" diye düşünecekti ki...
+**Sence bizi ve dünyadaki her şeyi yerde tutan, zıpladığımızda uzaya uçup kaybolmamızı engelleyen o görünmez güç nedir?**
 
-Birden, kulaklıkların içinden inanılmaz bir ses yankılandı!
+Mert biraz düşündü, ellerini çenesine koydu. ""Yerçekimi!"" dedi heyecanla.
 
-_“Uuuuuuu… Meeeeee… Oooooo…”_
+""Harika!"" dedi Zeynep. ""Dünyamız, üzerindeki her şeye görünmez bir sevgiyle, sımsıkı sarılır ve onları kendine çeker. İşte yerçekimi budur. Gerçek roketlerin dünyamızın bu güçlü kucağından kurtulup uzaya çıkabilmesi için çok ama çok hızlı, çok güçlü olmaları gerekir. Bu yüzden alt kısımlarında tonlarca özel yakıt bulunur. Motorlar ateşlendiğinde, o ateş devasa bir güçle aşağıya doğru itilir ve roket ok gibi gökyüzüne fırlar!""
 
-Bu ses o kadar derin, o kadar güçlü ve yankılıydı ki Nil’in tüyleri diken diken oldu. Sanki devasa bir keman çalınıyor, aynı anda derinden bir flüt sesi geliyordu. Ses bir inip bir çıkıyor, adeta sihirli bir melodi oluşturuyordu.
+Mert, roketinin tepesindeki parlak huniye dokundu. ""Peki abla, o kadar büyük ve ağır roketin hepsi mi uzaya, o uzak gezegenlere gidiyor?""
 
-""Amca! Bu... Bu harika bir ses! Kim söylüyor bu şarkıyı?"" diye fısıldadı Nil, şarkıcıyı ürkütmekten korkarak.
+""İşte uzay roketlerinin en büyük sırrı da burada gizli,"" diye fısıldadı Zeynep gizemli bir ses tonuyla.
 
-""İşte karşında okyanusun en büyük sanatçıları: Kambur balinalar!"" dedi amcası gururla. ""Şu an kilometrelerce uzaktaki arkadaşlarına, ailelerine şarkı söyleyerek sesleniyorlar. Biliyor musun Nil, bu şarkılar suyun içinde havadan çok daha hızlı ve uzağa gider. Bir balina şarkı söylediğinde, okyanusun öbür ucundaki bir başka balina onu duyabilir.""
+**Sen yokuş yukarı koşarken sırtındaki içi taş dolu ağır bir çantayı yere bıraksan daha mı hızlı koşarsın, yoksa daha mı yavaş?**
 
-**Düşünsene, sen odanda şarkı söylüyorsun ve taa başka bir şehirdeki arkadaşın seni duyabiliyor! Sence de balinaların sesi inanılmaz güçlü değil mi?**
+""Tabii ki daha hızlı koşarım! Yüküm hafifler, kuş gibi olurum,"" dedi Mert hemen.
 
-Nil denizin yüzeyine bakarak bu dev şarkıcıları görmeye çalıştı. O sırada geminin biraz ilerisinde suyun yüzeyi kabarmaya, fokurdamaya başladı. Denizin içinden simsiyah, devasa bir karaltı yükseliyordu.
+""Aynen öyle Kaptan Mert! Roketler de uzaya çıkarken hızlanmak ve enerjilerini korumak için hafiflemek zorundadır. Bu yüzden o gördüğümüz kocaman roket, aslında iç içe geçmiş birkaç bölümden oluşur. En alttaki büyük yakıt deposunun içindeki yakıt bittiğinde, roket o ağır ve boş parçayı gökyüzünde bırakır. O parça gövdeden ayrılır ve roket daha da hafifleyerek hızla yoluna devam eder. Biraz daha yükselince, diğer parça da ayrılır...""
 
-Ve aniden... _Svuuşşş!_
+Mert şaşkınlıkla gözlerini kocaman açtı. ""Eğer parçalar ayrılıp düşüyorsa, geriye sadece neresi kalıyor? Astronotlar nerede duruyor?""
 
-Sanki denizin içinden büyük bir denizaltı çıkıyormuş gibi kocaman, gri-siyah renkli bir kambur balina suyun yüzeyinde belirdi! Nil hayatında bu kadar büyük bir canlı görmemişti. Balina neredeyse büyük bir okul otobüsü kadardı!
+Zeynep parmağıyla Mert'in yaptığı roketin en tepesindeki sivri şapkayı gösterdi. ""Sadece en tepedeki küçücük oda kalıyor! O odaya 'kapsül' denir. O cesur astronotlar, roketin en uç noktasındaki o minicik kapsülün içinde otururlar. Altlarındaki tüm o devasa gövde ve yakıt depoları, sadece o küçük kapsülü yıldızlara güvenle ulaştırmak için vardır.""
 
-Balinanın başının tam üstündeki deliklerden gökyüzüne doğru kocaman, köpüklü bir su fıskiyesi fışkırdı. _Püüüffff!_
+Mert, kartondan yaptığı roketin en tepesine, yani kendi kapsülüne sevgiyle baktı. Gerçek roketlerin dünyadan ayrılmak için ne kadar büyük bir çaba harcadığını, uzaya varmak için nasıl yüklerinden kurtulup hafiflediklerini hayal etti. Kendini o minik kapsülün içindeki mutlu bir kâşif gibi hissetti.
 
-**Sence bu kadar kocaman bir canlı, suların altında saatlerce kalıp nefesini nasıl tutuyordur? Balinalar da balık mıdır?**
+Camdan dışarı, masmavi gökyüzüne baktı. Bir gün o da gerçekten o devasa alevlerin üzerinde, dünyanın görünmez kucağından kurtulup yıldızların arasına süzülecekti.
 
-Hayır, balinalar balık değildir! Onlar tıpkı yunuslar ve bizim gibi memeli canlılardır. Yani suyun altında nefes alamazlar. Taze hava solumak için suyun yüzeyine çıkmak zorundadırlar. Başlarının üstünde bulunan o delikler aslında onların burunlarıdır! Suyu püskürttüklerinde, içlerindeki eski havayı dışarı atarlar ve tertemiz bir nefes çekerler.
+""Teşekkür ederim Zeynep,"" dedi Mert kocaman gülümseyerek. ""Şimdi Yıldız Tozu ile uzaya çıkmaya çok daha hazırım!""
 
-Nil, bu nazik devin suya tekrar yavaşça süzülüşünü izledi. ""Amca,"" dedi merakla, ""bu kadar kocaman bir hayvan doyabilmek için kim bilir ne kadar büyük balıklar, devasa köpekbalıkları yiyordur!""
-
-Amcası Ozan başını iki yana sallayarak gülümsedi. ""İnanması çok güç ama, bu devasa balinalar okyanustaki en minicik canlılarla beslenirler! Adlarına 'Krill' denilen, senin serçe parmağın kadar küçük, karidese benzeyen minik canlıları yerler.""
-
-Nil çok şaşırmıştı. Okul otobüsü büyüklüğünde bir hayvan, serçe parmağı kadar küçük bir şeyi yiyerek nasıl doyabilirdi?
-
-""Kambur balinaların ağzında bizimki gibi dişler yoktur,"" diye devam etti amcası. ""Onun yerine 'balina bıyığı' denilen, kocaman, fırçaya benzeyen dişleri vardır. Balina kocaman ağzını açıp tonlarca suyu ve içindeki minik krilleri yutar. Sonra suyu bu fırça gibi bıyıkların arasından dışarı iter. Kriller ağzında kalır ve onları afiyetle midesine indirir. Bir kerede binlercesini yerler!""
-
-Nil, okyanusun bu dev kütüphanesinde ne kadar çok sır saklı olduğunu bir kez daha anladı. Onlar okyanusun kaba devleri değil, minicik şeylerle beslenen, şarkı söyleyen zarif ve bilge canlılarıydı.
-
-Bir süre sonra kambur balina, okyanusun derinliklerine dalmak için hazırlandı. Devasa, kelebek kanadına benzeyen kuyruğunu suyun yüzeyine çıkardı. Nil’e el sallar gibi kuyruğunu havaya kaldırdı ve suları köpürterek maviliklerin içine doğru sessizce kayboldu.
-
-Ama şarkısı hidrofonun kulaklıklarından hâlâ gelmeye devam ediyordu. _“Ooooooo… Meeeeee…”_
-
-Nil, güneş batarken kulaklıkları yavaşça başından çıkardı. Artık denize her baktığında sadece suyu değil, devasa ve görünmez bir konser salonunu görecekti. Çünkü şarkı söyleyen balinalar her zaman orada, derinlerin en güzel ninnilerini söylemeye devam edeceklerdi.
+Kapsülüne geri oturdu, gözlerini kapattı. İçindeki hayal gücü o kadar kuvvetliydi ki, odasının tavanından çoktan yıldızlara doğru süzülmeye başlamıştı bile.
 
 ##### Bugün Ne Öğrendik?
 
-- **Balinalar Balık Değildir:** Suyun içinde yaşamalarına rağmen, balinalar tıpkı bizim gibi akciğerleriyle nefes alan memeli hayvanlardır.
+- **Görünmez Kucaklama:** Bizi ve nesneleri dünyada tutan güce yerçekimi denir. Roketler bu güçten kurtulmak için çok büyük bir hızla fırlatılırlar.
     
-- **Tepedeki Burun (Nefes Deliği):** Nefes almak için su yüzeyine çıkarlar ve başlarının üzerindeki delikten eski havayı suyu püskürterek dışarı atarlar.
+- **İtiş Gücü:** Roketlerin içinde tonlarca özel yakıt bulunur. Bu yakıt ateşlenip aşağı doğru püskürtüldüğünde roket zıt yöne, yani yukarıya fırlar.
     
-- **Okyanus Korosu:** Özellikle kambur balinalar, birbirleriyle iletişim kurmak, ailelerini bulmak için kilometrelerce öteye ulaşabilen çok güçlü ve melodik şarkılar söylerler.
+- **Hafifleme Taktikleri:** Roketler uzaya çıkarken hızlanmak için altlarındaki boşalan yakıt depolarını (parçalarını) bırakarak hafiflerler.
     
-- **Devasa Beden, Minik Yemek:** Çok büyük olmalarına rağmen dişleri yoktur. Bunun yerine fırça gibi olan ""balina bıyıklarıyla"" suyu süzerek ""Krill"" adı verilen minicik canlıları yiyerek beslenirler.
-    
-- **Sualtı Mikrofonu:** Suyun altındaki sesleri dinlemek ve kaydetmek için kullanılan özel aletlere ""Hidrofon"" denir.",
-                    UnlockCost = 150,
-                    IsLocked = true
+- **Küçük Ev (Kapsül):** Astronotlar roketin devasa gövdesinde değil, sadece en tepesinde bulunan ""Kapsül"" adındaki çok özel ve korunaklı küçük odada yolculuk yaparlar.",
+                UnlockCost = 150,
+                IsLocked = true
+            },
+            new List<Question>
+            {
+                new Question{
+                    Text = "Dünyamızın eşyaları ve bizi yere doğru çeken, roketlerin de uzaya çıkmak için yenmesi gereken gücün adı nedir?",
+                    Options = new List<string>
+                    {
+                        "Rüzgar",
+                        "Yerçekimi",
+                        "Mıknatıs",
+                        "Bulut itmesi"
+                    },
+                    CorrectAnswer = "Yerçekimi",
+                    Points = 25
                 },
-                new List<Question>
-                {
-                    new Question{
-                        Text = "Hikâyemize göre balinalar birbirlerine mesaj göndermek ve iletişim kurmak için ne yaparlar?",
-                        Options = new List<string>
-                        {
-                            "Mors alfabesiyle ışık yakarlar",
-                            "Birbirlerine şarkı söylerler",
-                            "Denizin dibindeki kayalara resim çizerler",
-                            "Suyun üstüne zıplarlar"
-                        },
-                        CorrectAnswer = "Birbirlerine şarkı söylerler",
-                        Points = 25
+                new Question{
+                    Text = "Roketler gökyüzüne doğru uçarken daha çok hızlanabilmek için ne yaparlar?",
+                    Options = new List<string>
+                    {
+                        "Paraşüt açarlar",
+                        "Güneşlenmek için dururlar",
+                        "Boşalan yakıt parçalarını gökyüzünde bırakarak hafiflerler",
+                        "Su püskürtürler"
                     },
-                    new Question{
-                        Text = "Kambur balinaların midelerini doyurmak için yedikleri, serçe parmağı büyüklüğündeki minicik canlıların adı nedir?",
-                        Options = new List<string>
-                        {
-                            "Krill",
-                            "Su piresi",
-                            "Deniz yıldızı",
-                            "Hamsi"
-                        },
-                        CorrectAnswer = "Krill",
-                        Points = 25
+                    CorrectAnswer = "Boşalan yakıt parçalarını gökyüzünde bırakarak hafiflerler",
+                    Points = 25
+                },
+                new Question{
+                    Text = "Mert, kartondan yaptığı roketine hangi ismi vermiştir?",
+                    Options = new List<string>
+                    {
+                        "Yıldız Tozu",
+                        "Gümüş Ay",
+                        "Ateş Topu",
+                        "Bulut Gemisi"
                     },
-                    new Question{
-                        Text = "Balinalar nefes almak için vücutlarındaki hangi bölümü kullanırlar?",
-                        Options = new List<string>
-                        {
-                            "Kuyruklarındaki solungaçları",
-                            "Karınlarındaki özel bir keseyi",
-                            "Başlarının üstünde bulunan nefes deliğini (burunlarını)",
-                            "Kulaklarını"
-                        },
-                        CorrectAnswer = "Başlarının üstünde bulunan nefes deliğini (burunlarını)",
-                        Points = 25
+                    CorrectAnswer = "Yıldız Tozu",
+                    Points = 25
+                },
+                new Question{
+                    Text = "Hikâyemize göre astronotlar, roketin hangi bölümünün içinde oturarak uzaya seyahat ederler?",
+                    Options = new List<string>
+                    {
+                        "Roketin en altındaki motorun içinde",
+                        "Roketin tekerleklerinde",
+                        "Roketin dışındaki kanatlarda",
+                        "Roketin en tepesindeki \"Kapsül\" adı verilen küçük odada"
                     },
-                    new Question{
-                        Text = " Nil ve amcası Ozan'ın suyun altındaki balina şarkılarını dinlemek için kullandıkları aletin (sualtı mikrofonu) adı nedir?",
-                        Options = new List<string>
-                        {
-                            "Teleskop",
-                            "Hidrofon",
-                            "Stetoskop",
-                            "Megafon"
-                        },
-                        CorrectAnswer = "Hidrofon",
-                        Points = 25
-                    }
+                    CorrectAnswer = "Roketin en tepesindeki \"Kapsül\" adı verilen küçük odada",
+                    Points = 25
                 }
-                );
+            }
+            );
             #endregion
 
         }
