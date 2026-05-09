@@ -451,9 +451,9 @@ Kapsülüne geri oturdu, gözlerini kapattı. İçindeki hayal gücü o kadar ku
                         "Roketin en altındaki motorun içinde",
                         "Roketin tekerleklerinde",
                         "Roketin dışındaki kanatlarda",
-                        "Roketin en tepesindeki \"Kapsül\" adı verilen küçük odada"
+                        "Roketin en tepesindeki 'Kapsül' adı verilen küçük odada"
                     },
-                    CorrectAnswer = "Roketin en tepesindeki \"Kapsül\" adı verilen küçük odada",
+                    CorrectAnswer = "Roketin en tepesindeki 'Kapsül' adı verilen küçük odada",
                     Points = 25
                 }
             }

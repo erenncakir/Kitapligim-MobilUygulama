@@ -4,6 +4,7 @@ using OkumaUygulamasi.API.Extensions;
 
 namespace OkumaUygulamasi.API.Endpoints
 {
+    public record AnswerRequest(string UserId, string UserAnswer);
     public static class QuestionEndpoints
     {
         public static void MapQuestionEndpoints(this IEndpointRouteBuilder app)
@@ -19,15 +20,15 @@ namespace OkumaUygulamasi.API.Endpoints
                 return Results.Ok(questions);
             });
 
-            questionApi.MapPost("/{id}/answer", async (int id, string userId, string userAnswer, AppDbContext db) =>
+            questionApi.MapPost("/{id}/answer", async (int id, AnswerRequest request, AppDbContext db) =>
             {
                 var question = await db.Questions.FindAsync(id);
                 if (question == null) return Results.NotFound("Soru bulunamadı");
 
-                var user = await db.Users.FindAsync(userId);
+                var user = await db.Users.FindAsync(request.UserId);
                 if (user == null) return Results.NotFound("Kullanıcı bulunamadı");
 
-                bool isCorrect = string.Equals(question.CorrectAnswer, userAnswer, StringComparison.OrdinalIgnoreCase);
+                bool isCorrect = string.Equals(question.CorrectAnswer, request.UserAnswer, StringComparison.OrdinalIgnoreCase);
                 if (isCorrect)
                 {
                     user.TotalPoints += question.Points;
