@@ -1,11 +1,9 @@
-import 'package:flutter/material.dart';
-
 class Book {
   const Book({
     required this.title,
-    required this.coverColor,
+    this.imageUrl,
   });
 
   final String title;
-  final Color coverColor;
+  final String? imageUrl;
 }

@@ -12,7 +12,7 @@ class WalletPage extends StatefulWidget {
 
 class _WalletPageState extends State<WalletPage> {
   int _balance = 0;
-  static const String _deviceId = 'test-device-1';
+  static const String _deviceId = 'test-device-2';
 
   @override
   void initState() {
@@ -47,10 +47,7 @@ class _WalletPageState extends State<WalletPage> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(16),
                 gradient: const LinearGradient(
-                  colors: [
-                    Color(0xFF1F2937),
-                    Color(0xFF0F172A),
-                  ],
+                  colors: [Color(0xFF1F2937), Color(0xFF0F172A)],
                 ),
               ),
               child: Text(
@@ -70,10 +67,7 @@ class _WalletPageState extends State<WalletPage> {
             const SizedBox(height: 12),
             const Text(
               'Jeton Paketleri - Gerçek Para ile Satın Al',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w800,
-              ),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
             ),
             const SizedBox(height: 14),
             GridView.count(

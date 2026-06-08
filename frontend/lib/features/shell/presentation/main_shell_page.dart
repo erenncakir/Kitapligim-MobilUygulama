@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/network/api_service.dart';
-import '../../../core/network/book_model.dart';
 import '../../../core/network/user_model.dart';
+import '../../../core/state/optimistic_unlock_notifier.dart';
 import '../../../core/state/token_notifier.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../discover/presentation/discover_page.dart';
@@ -20,8 +20,9 @@ class MainShellPage extends StatefulWidget {
 class _MainShellPageState extends State<MainShellPage> {
   int _index = 0;
   UserModel? _user;
-  List<BookModel> _books = [];
-  static const String _deviceId = 'test-device-1';
+  int _unlockedBookCount = 0;
+  Set<int> _knownUnlockedIds = {};
+  static const String _deviceId = 'test-device-2';
 
   static const List<Widget> _pages = [
     MyLibraryPage(),
@@ -32,7 +33,31 @@ class _MainShellPageState extends State<MainShellPage> {
   @override
   void initState() {
     super.initState();
+    tokenBalanceNotifier.addListener(_onTokenBalanceChanged);
+    optimisticallyUnlockedBookIds.addListener(_onOptimisticUnlock);
     _loadData();
+  }
+
+  @override
+  void dispose() {
+    tokenBalanceNotifier.removeListener(_onTokenBalanceChanged);
+    optimisticallyUnlockedBookIds.removeListener(_onOptimisticUnlock);
+    super.dispose();
+  }
+
+  void _onTokenBalanceChanged() {
+    if (mounted) setState(() {});
+  }
+
+  void _onOptimisticUnlock() {
+    if (!mounted) return;
+    setState(() {
+      _unlockedBookCount = {
+        ..._knownUnlockedIds,
+        ...optimisticallyUnlockedBookIds.value,
+      }.length;
+    });
+    _loadUnlockedBookCount();
   }
 
   Future<void> _loadData() async {
@@ -43,16 +68,28 @@ class _MainShellPageState extends State<MainShellPage> {
         setState(() => _user = user);
       }
     } catch (_) {}
+    await _loadUnlockedBookCount();
+  }
+
+  Future<void> _loadUnlockedBookCount() async {
     try {
-      final books = await ApiService().getBooks();
+      final unlockedIds = await ApiService().getUnlockedBookIds(_deviceId);
+      _knownUnlockedIds = unlockedIds.toSet();
+      final mergedCount = {
+        ..._knownUnlockedIds,
+        ...optimisticallyUnlockedBookIds.value,
+      }.length;
       if (mounted) {
-        setState(() => _books = books);
+        setState(() => _unlockedBookCount = mergedCount);
       }
     } catch (_) {}
   }
 
   @override
   Widget build(BuildContext context) {
+    final tokenBalance = tokenBalanceNotifier.value;
+    final userId = _user?.id ?? _deviceId;
+
     return Scaffold(
       appBar: const TokenBalanceAppBar(),
       drawer: Drawer(
@@ -79,16 +116,21 @@ class _MainShellPageState extends State<MainShellPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Misafir Kullanıcı',
-                            style: TextStyle(
+                            userId,
+                            style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w700,
                             ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                           ),
-                          SizedBox(height: 4),
+                          const SizedBox(height: 4),
                           Text(
-                            'ID: ${_user?.id ?? 'Yükleniyor...'}',
-                            style: TextStyle(color: Colors.black54),
+                            'Jeton: $tokenBalance',
+                            style: const TextStyle(
+                              color: Colors.black54,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ],
                       ),
@@ -97,16 +139,12 @@ class _MainShellPageState extends State<MainShellPage> {
                 ),
               ),
               ListTile(
-                leading: const Text('📚', style: TextStyle(fontSize: 18)),
-                title: Text(
-                  'Kitaplığındaki Kitaplar: ${_books.where((b) => !b.isLocked).length}',
-                ),
+                leading: const Text('🪙', style: TextStyle(fontSize: 18)),
+                title: Text('Toplam Jeton: $tokenBalance'),
               ),
               ListTile(
-                leading: const Text('🧠', style: TextStyle(fontSize: 18)),
-                title: Text(
-                  'Çözülen Sorular: ${(_user?.totalPoints ?? 0) ~/ 10}',
-                ),
+                leading: const Text('📚', style: TextStyle(fontSize: 18)),
+                title: Text('Açılan Kitaplar: $_unlockedBookCount'),
               ),
               const Spacer(),
               ListTile(
@@ -127,17 +165,17 @@ class _MainShellPageState extends State<MainShellPage> {
           ),
         ),
       ),
-      body: IndexedStack(
-        index: _index,
-        children: _pages,
-      ),
+      body: IndexedStack(index: _index, children: _pages),
       bottomNavigationBar: ClipRRect(
-        borderRadius: const BorderRadius.vertical(
-          top: Radius.circular(16),
-        ),
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
         child: BottomNavigationBar(
           currentIndex: _index,
-          onTap: (i) => setState(() => _index = i),
+          onTap: (i) {
+            setState(() => _index = i);
+            if (i == 0) {
+              _loadUnlockedBookCount();
+            }
+          },
           backgroundColor: AppColors.woodShelf,
           selectedItemColor: AppColors.gold,
           unselectedItemColor: Colors.white60,

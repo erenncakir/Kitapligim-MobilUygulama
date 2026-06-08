@@ -51,7 +51,7 @@ class _QuizResultPageState extends State<QuizResultPage> {
   }
 
   final _apiService = ApiService();
-  final String _userId = 'test-device-1';
+  final String _userId = 'test-device-2';
 
   Future<void> _submitCorrectAnswers() async {
     for (int i = 0; i < widget.questions.length; i++) {
@@ -96,7 +96,11 @@ class _QuizResultPageState extends State<QuizResultPage> {
               const Text(
                 'Tebrikler!',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 34, fontWeight: FontWeight.w900),
+                style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.black,
+                ),
               ),
               const SizedBox(height: 28),
               Container(

@@ -7,30 +7,24 @@ import '../book_detail_page.dart';
 import '../../../library/models/book.dart';
 import '../../../library/presentation/widgets/book_card.dart';
 
-/// Keşfet grid hücresi: açık kitap veya kilit + jeton overlay’i.
+/// Keşfet grid hücresi: açık kitap veya kilit + jeton overlay'i.
 class DiscoverBookTile extends StatelessWidget {
   const DiscoverBookTile({
     super.key,
     required this.book,
+    this.onReturn,
   });
 
   final BookModel book;
+  final VoidCallback? onReturn;
 
   static const double _cardRadius = 8;
-  static const _coverPalette = <Color>[
-    Color(0xFF3B82F6),
-    Color(0xFF10B981),
-    Color(0xFFF97316),
-    Color(0xFF8B5CF6),
-    Color(0xFFEF4444),
-    Color(0xFF14B8A6),
-  ];
 
   @override
   Widget build(BuildContext context) {
     final uiBook = Book(
       title: book.title,
-      coverColor: _coverPalette[book.id % _coverPalette.length],
+      imageUrl: book.imageUrl,
     );
 
     return Stack(
@@ -75,11 +69,12 @@ class DiscoverBookTile extends StatelessWidget {
     );
   }
 
-  void _openBook(BuildContext context, BookModel book) {
-    Navigator.of(context).push(
+  Future<void> _openBook(BuildContext context, BookModel book) async {
+    await Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => BookDetailPage(book: book),
       ),
     );
+    onReturn?.call();
   }
 }

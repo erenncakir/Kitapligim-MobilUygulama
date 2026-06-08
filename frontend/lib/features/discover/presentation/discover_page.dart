@@ -15,6 +15,7 @@ class DiscoverPage extends StatefulWidget {
 }
 
 class _DiscoverPageState extends State<DiscoverPage> {
+  static const String _deviceId = 'test-device-2';
   static const double _horizontalPad = 16;
   static const double _fieldRadius = 16;
   static const double _gridGap = 12;
@@ -27,6 +28,30 @@ class _DiscoverPageState extends State<DiscoverPage> {
   ];
 
   String _selectedCategory = 'Tümü';
+  late Future<List<BookModel>> _booksFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    _booksFuture = _loadBooks();
+  }
+
+  Future<List<BookModel>> _loadBooks() async {
+    final api = ApiService();
+    final results = await Future.wait([
+      api.getBooks(),
+      api.getUnlockedBookIds(_deviceId),
+    ]);
+    final books = results[0] as List<BookModel>;
+    final unlockedIds = Set<int>.from(results[1] as List<int>);
+    return BookModel.applyUnlockedStatus(books, unlockedIds);
+  }
+
+  void _refreshBooks() {
+    setState(() {
+      _booksFuture = _loadBooks();
+    });
+  }
 
   List<BookModel> _filterBooks(List<BookModel> books) {
     final selectedCategory = _selectedCategory;
@@ -42,7 +67,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
     return ColoredBox(
       color: Theme.of(context).scaffoldBackgroundColor,
       child: FutureBuilder<List<BookModel>>(
-        future: ApiService().getBooks(),
+        future: _booksFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState != ConnectionState.done) {
             return const Center(child: CircularProgressIndicator());
@@ -166,7 +191,10 @@ class _DiscoverPageState extends State<DiscoverPage> {
                     childAspectRatio: BookCard.aspectRatio,
                   ),
                   delegate: SliverChildBuilderDelegate((context, index) {
-                    return DiscoverBookTile(book: filteredBooks[index]);
+                    return DiscoverBookTile(
+                      book: filteredBooks[index],
+                      onReturn: _refreshBooks,
+                    );
                   }, childCount: filteredBooks.length),
                 ),
               ),
