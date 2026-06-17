@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/network/api_service.dart';
 import '../../../core/network/book_model.dart';
@@ -20,16 +19,10 @@ class BookReadingPage extends StatefulWidget {
 
 class _BookReadingPageState extends State<BookReadingPage> {
   static const int _pageCharLimit = 800;
-  static const double _minFontSize = 14;
-  static const double _maxFontSize = 28;
-  static const List<String> _fontFamilyLabels = ['Roboto', 'Lora', 'Nunito'];
-
   late final PageController _pageController;
   late List<String> _pages;
   int _currentPageIndex = 0;
   int _themeIndex = 0;
-  int _fontFamilyIndex = 2;
-  double _fontSize = 18;
 
   static const List<_ReadingTheme> _themes = [
     _ReadingTheme(
@@ -109,78 +102,6 @@ class _BookReadingPageState extends State<BookReadingPage> {
     return pages.isEmpty ? const [''] : pages;
   }
 
-  TextStyle _baseTextStyle(_ReadingTheme theme) {
-    final base = TextStyle(
-      color: theme.textColor,
-      fontSize: _fontSize,
-      height: 1.6,
-    );
-
-    switch (_fontFamilyIndex) {
-      case 0:
-        return GoogleFonts.roboto(textStyle: base);
-      case 1:
-        return GoogleFonts.lora(textStyle: base);
-      case 2:
-        return GoogleFonts.nunito(textStyle: base);
-      default:
-        return base;
-    }
-  }
-
-  List<TextSpan> _parseBoldMarkdown(
-    String text,
-    TextStyle baseStyle,
-    TextStyle boldStyle,
-  ) {
-    final spans = <TextSpan>[];
-    final regex = RegExp(r'\*\*(.+?)\*\*');
-    var lastEnd = 0;
-
-    for (final match in regex.allMatches(text)) {
-      if (match.start > lastEnd) {
-        spans.add(
-          TextSpan(
-            text: text.substring(lastEnd, match.start),
-            style: baseStyle,
-          ),
-        );
-      }
-      spans.add(TextSpan(text: match.group(1), style: boldStyle));
-      lastEnd = match.end;
-    }
-
-    if (lastEnd < text.length) {
-      spans.add(TextSpan(text: text.substring(lastEnd), style: baseStyle));
-    }
-
-    return spans.isEmpty ? [TextSpan(text: text, style: baseStyle)] : spans;
-  }
-
-  Widget _buildReadingText(String text, _ReadingTheme theme) {
-    final baseStyle = _baseTextStyle(theme);
-    final boldStyle = baseStyle.copyWith(fontWeight: FontWeight.w800);
-
-    return RichText(
-      text: TextSpan(
-        style: baseStyle,
-        children: _parseBoldMarkdown(text, baseStyle, boldStyle),
-      ),
-    );
-  }
-
-  void _changeFontSize(double delta) {
-    setState(() {
-      _fontSize = (_fontSize + delta).clamp(_minFontSize, _maxFontSize);
-    });
-  }
-
-  void _cycleFontFamily() {
-    setState(() {
-      _fontFamilyIndex = (_fontFamilyIndex + 1) % _fontFamilyLabels.length;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     final isLastPage = _currentPageIndex == _pages.length - 1;
@@ -206,28 +127,11 @@ class _BookReadingPageState extends State<BookReadingPage> {
         centerTitle: true,
         actions: [
           IconButton(
-            tooltip: 'Yazıyı küçült',
-            onPressed: _fontSize <= _minFontSize
-                ? null
-                : () => _changeFontSize(-2),
-            icon: Icon(Icons.remove_rounded, color: activeTheme.appBarFg),
-          ),
-          IconButton(
-            tooltip: 'Yazıyı büyüt',
-            onPressed: _fontSize >= _maxFontSize
-                ? null
-                : () => _changeFontSize(2),
-            icon: Icon(Icons.add_rounded, color: activeTheme.appBarFg),
-          ),
-          IconButton(
-            tooltip: 'Font: ${_fontFamilyLabels[_fontFamilyIndex]}',
-            onPressed: _cycleFontFamily,
-            icon: Icon(Icons.font_download_rounded, color: activeTheme.appBarFg),
-          ),
-          IconButton(
-            tooltip: 'Tema değiştir',
             onPressed: _toggleTheme,
-            icon: Icon(Icons.palette_rounded, color: activeTheme.appBarFg),
+            icon: Icon(
+              Icons.palette_rounded,
+              color: activeTheme.appBarFg,
+            ),
           ),
         ],
       ),
@@ -250,8 +154,13 @@ class _BookReadingPageState extends State<BookReadingPage> {
                       itemBuilder: (context, index) {
                         return Padding(
                           padding: const EdgeInsets.fromLTRB(18, 22, 18, 22),
-                          child: SingleChildScrollView(
-                            child: _buildReadingText(_pages[index], activeTheme),
+                          child: Text(
+                            _pages[index],
+                            style: TextStyle(
+                              color: activeTheme.textColor,
+                              fontSize: 18,
+                              height: 1.85,
+                            ),
                           ),
                         );
                       },

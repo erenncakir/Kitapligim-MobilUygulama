@@ -96,34 +96,6 @@ class ApiService {
     }
   }
 
-  Future<List<int>> getUnlockedBookIds(String userId) async {
-    try {
-      final response = await http.get(
-        Uri.parse('$baseUrl/api/v1/users/$userId/unlocked-books'),
-      );
-      if (response.statusCode != 200) {
-        throw Exception(
-          'Failed to load unlocked books: ${response.statusCode}',
-        );
-      }
-
-      final dynamic decoded = jsonDecode(response.body);
-      if (decoded is! List) {
-        throw Exception('Invalid unlocked-books response format');
-      }
-
-      return decoded.map((item) {
-        if (item is int) return item;
-        if (item is Map<String, dynamic>) {
-          return (item['id'] ?? item['bookId'] ?? item['book_id']) as int;
-        }
-        return item as int;
-      }).toList();
-    } catch (e) {
-      throw Exception('getUnlockedBookIds error: $e');
-    }
-  }
-
   Future<bool> unlockBook(String deviceId, int bookId) async {
     try {
       final url = Uri.parse(

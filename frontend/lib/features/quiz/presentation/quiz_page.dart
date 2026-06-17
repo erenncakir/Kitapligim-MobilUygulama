@@ -32,12 +32,11 @@ class _QuizPageState extends State<QuizPage> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: Colors.black87,
-        iconTheme: const IconThemeData(color: Colors.black87),
+        foregroundColor: Colors.black,
         elevation: 0,
         title: Text(
           'Soru ${_currentIndex + 1}/${widget.questions.length}',
-          style: const TextStyle(color: Colors.black87),
+          style: const TextStyle(color: Colors.black),
         ),
       ),
       body: SafeArea(
@@ -84,8 +83,6 @@ class _QuizPageState extends State<QuizPage> {
                   ElevatedButton(
                     onPressed: _goNext,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF1F2937),
-                      foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(
                         horizontal: 20,
                         vertical: 14,
@@ -96,10 +93,7 @@ class _QuizPageState extends State<QuizPage> {
                     ),
                     child: Text(
                       isLast ? 'Testi Bitir' : 'Sonraki Soru',
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w700,
-                      ),
+                      style: const TextStyle(color: Colors.black87),
                     ),
                   ),
                 ],
